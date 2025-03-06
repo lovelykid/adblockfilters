@@ -39,7 +39,7 @@ class InviZible(APPBase):
                 f.write("! Blocked domains: %s\n"%(len(blockList)))
                 f.write("!\n")
                 for domain in blockList:
-                    f.write("%s\n"%(domain))
+                    f.write("0.0.0.0 %s\n"%(domain))
             
             if isLite:
                 logger.info("adblock InviZible Lite: block=%d"%(len(blockList)))
