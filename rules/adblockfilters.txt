@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250319001411
-! Last modified: 2025/03/19 00:14:11
-! Blocked Filters: 97105
+! Version: 20250319085044
+! Last modified: 2025/03/19 08:50:44
+! Blocked Filters: 97120
 !
 ###AC_ad
 ###AD_160
@@ -15278,6 +15278,7 @@
 ##body#reader-m-fix IMG[src*='.gif'][style='width:100%;height:100%']
 ##body#wrapper A[ontouchstart='this.click();']
 ##body.active > div.myui-panel > DIV#home_slide
+##body.aspw[topmargin="0"]
 ##body.bg_xin > A[href*='com:'][target='_blank']
 ##body.chapter > div.container div.slide-baidu *
 ##body.conch-adjust-fix #component
@@ -15698,6 +15699,7 @@ $script,redirect-rule=noopjs,domain=xfreehd.com
 $script,redirect-rule=noopjs,domain=zeroupload.com
 $script,subdocument,third-party,domain=dlkoo.com
 $script,subdocument,third-party,websocket,xmlhttprequest,domain=bhshu.net|louzhong8.com|miwens.com
+$script,subdocument,xmlhttprequest,domain=07c225f3.online|html-load.com
 $script,subdocument,~third-party,websocket,xmlhttprequest,domain=m.6666xsw.com|m.chenkuan.com|m.jmshuwu.net|wodexiaoshuoh.com
 $script,third-party,denyallow=bowercdn.net,domain=yourupload.com
 $script,third-party,denyallow=bsgslb.com|bytecdntp.com,domain=m.shuhaige.net
@@ -17143,6 +17145,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .smartrmail.co/o/$image
 .smtp.net/o/$image
 .southwest.com/r/$image
+.sp1-brevo.net/mk/op/$image
 .space/?tid=
 .sparkpostmail.com/q/$image
 .sparkpostmail2.com/q/$image
@@ -24860,6 +24863,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@/-1/*$domain=07c225f3.online|content-loader.com|css-load.com|html-load.com|img-load.com
 @@//*.xvideos.com^$domain=xvideos.com
 @@//aka-cdn-ns.adtechus.com/images/$domain=cinemablend.com
+@@/802/*$script,subdocument,xmlhttprequest,domain=07c225f3.online
+@@/984/*$script,subdocument,xmlhttprequest,domain=html-load.com
 @@/:\/\/.*[.]wp[.]pl\/[a-z0-9_]+[.][a-z]+[/:&?]?/
 @@/?article=$stealth=referrer,domain=m10.asd.quest
 @@/OutbrainWidgetConnector.js$domain=foxnews.com
@@ -30400,6 +30405,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||integration.plarium.com^$stealth
 @@||intelyvale.com.mx/ads/images/$domain=valesdegasolina.mx
 @@||intercelestial.com^$generichide
+@@||interfans.org^$generichide
 @@||intoday.in/embeded/*_live?
 @@||inven.co.kr^$stealth=dpi
 @@||inven.co.kr^$stealth=ip
@@ -40343,7 +40349,7 @@ bing.com#?#.insights > .insml > li > .ins_exp > div > ul > li > .ta_c > a[href*=
 bing.com#?#.sb_form_placeholder:-abp-has(>.ad-ghost-slug)
 bing.com#?#.slide:has(> .tobitem > a > .rtb_ad_caritem_mvtr)
 bing.com#?#.tob_calcontainer > div.slide:has(> div.tobitem > a[href*="/tracking?adUnit="])
-bing.com#?#li.b_algo:has(.rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F"]):has(.tptt:-abp-contains(/^(Amazon|Best Buy|Booking\.com|eBay|eDreams|Lenovo US|Trip\.com|Tripadvisor|Walmart)$/))
+bing.com#?#li.b_algo:has(.rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F"]):has(.tptt:-abp-contains(/^([Aa]mazon(\.[acdefinps][aeglnorst]m?\.?[abjmtu]?[kprux]?)?|Best Buy|Booking\.com|eBay|eDreams|Lenovo US|Trip\.com|Tripadvisor|Walmart)$/))
 bing.com#?#li[class="b_algo"]:-abp-has(.b_attribution[data-partnertag]+p[class])
 bing.com#?#main[aria-label="Search Results"] > #b_pole:has(#cu_polebanner #cu_poleMSPromoText)
 bing.com#@#.b_adBottom
@@ -55018,6 +55024,7 @@ interestingengineering.com##div[class^="Home_popularArticlesContainer"]
 interestingengineering.com#%#//scriptlet('prevent-fetch', 'www3.doubleclick.net')
 interez.sk###rklm-pod-clankom
 interez.sk##.sidebar > #custom_html-2
+interfans.org#%#//scriptlet('remove-node-text', 'script', 'adBlockAction')
 interglot.com,sodapdf.com,stopmalvertising.com##div[style^="width:728px;"]
 interia.pl###desktopPhSitebranding
 interia.pl##.ad
@@ -60999,7 +61006,6 @@ mothership.sg##.ad--imu
 mothership.sg##.ad--lb
 mothership.sg##.ad--side
 mothership.sg##.events
-moto-station.com,seirsanduk.com,branditechture.agency,team-octavi.com,azdly.com,mxcity.mx,softcobra.com,technorj.com,cizgifilmizle.info,kawaguchimaeda.com,herenscan.com,coursesdaddy.com#%#//scriptlet('abort-current-inline-script', 'chp_ads_blocker_detector')
 moto.it##.aside-spacer:empty
 moto.it#?#.d-none:has(> div.adv)
 motobanda.pl#$#body #mvideo { z-index: 1!important; }
@@ -67880,6 +67886,7 @@ receivesmsonline.net##font[style="padding-right:3px;padding-left:3px;background-
 receivesmsonline.net##td[data-title="Advertisement"]
 receivesmsonline.net##td[data-title="Advertisement"]~td
 receivesmsonline.net,receivefreesms.net###mADSFooter
+recipenp.com,moto-station.com,seirsanduk.com,branditechture.agency,team-octavi.com,azdly.com,mxcity.mx,softcobra.com,technorj.com,cizgifilmizle.info,kawaguchimaeda.com,herenscan.com,coursesdaddy.com#%#//scriptlet('abort-current-inline-script', 'chp_ads_blocker_detector')
 recipes.timesofindia.com##.flipkartbanner
 reclaimthenet.org##.code-block > a[href="https://reclaim.link/brave-mid"] + p[style="text-align: center;"]
 reclaimthenet.org##a[href="https://reclaim.link/brave-mid"]
@@ -78249,6 +78256,7 @@ wired.com##.full-bleed-ad
 wired.com##.recirc-most-popular__items > li.recirc-most-popular__item > .ad
 wired.com##.sponsored-stories-component
 wired.com##.with-link-banner
+wired.com##div[class^="StickyHeroAdWrapper-"]
 wired.com##div[class^="advertisement"]
 wired.com##div[data-testid="ContentFooterBottom"] > div[class^="RowWrapper-"]
 wired.com##div[role="presentation"][data-outbrain-url]
@@ -78667,6 +78675,10 @@ wuyong.fun##.riplus_ads_wrap
 wuyong.fun#?#.sidebar-innter > section[id^="b2-widget-html-"]:has(.adsbygoogle)
 wvnews.com##.automatic-ad
 wvnews.com,news-gazette.com##.automatic-ad
+ww2-weapons.com###sgpb-popup-dialog-main-div-wrapper
+ww2-weapons.com##.sgpb-popup-overlay
+ww2-weapons.com##[class*="warhist-"]
+ww2-weapons.com##[id*="media"]
 wwe.com##.l-hybrid-col-frame_rail-wrap
 wweek.com##.pb-f-phanzu-phanzu-ad-code
 wwitv.com#?##page-wrapper > center:has(> .adsbygoogle)
@@ -85612,6 +85624,7 @@ zzzyk.com###Tinfo
 ||eccn.com/js/popupad_
 ||ecimg.tw/img/xdsys/*/layout/*/sign/channel*/ad_*.jpg
 ||eclassified.my/cp_featured
+||eclipseadblock.info^$popup
 ||eclog*-*.cafe24.com^
 ||eco.cdn.dopc.cz^$image
 ||ecoimages.xyz/furs/mastiff.js
@@ -97089,6 +97102,8 @@ zzzyk.com###Tinfo
 ~cityheaven.net###gg1
 ~daquandy.com##.m_acmsd
 ~daquandy.com##.pc_acmsd
+~dogdrip.net,~infinityfree.com,~smsonline.cloud##a[href^="https://07c225f3.online/contents/"]:not([href*="/95/"]):not([href*="/802/"])
+~dogdrip.net,~infinityfree.com,~smsonline.cloud##a[href^="https://html-load.com/contents/"]:not([href*="/95/"]):not([href*="/984/"])
 ~dogdrip.net,~infinityfree.com,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2502032353000"]
 ~fishmsg.net,~briian.com##.a_pt
 ~google.com##.adsbygoogle
