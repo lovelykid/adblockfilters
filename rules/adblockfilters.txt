@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250322001334
-! Last modified: 2025/03/22 00:13:34
-! Blocked Filters: 97210
+! Version: 20250322084858
+! Last modified: 2025/03/22 08:48:58
+! Blocked Filters: 97215
 !
 ###AC_ad
 ###AD_160
@@ -15767,7 +15767,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 &js_build=iclick-
 &js_build=iclick-$all
 &l=dataLayer&cx=c
-&mi_ecmp=$image
 &pagegroup=*&url=$script
 &pbsubid=*&noads=$all
 &popunder=$popup
@@ -25827,6 +25826,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||ads.api.24ur.si/adserver/banner/vast.php$domain=24ur.com
 @@||ads.atmosphere.copernicus.eu^$popup
 @@||ads.ayads.co/ajs.php?zid=$domain=411mania.com
+@@||ads.burdadigital.cz/sites/default/files/public/burda_ads/prod/dist/$domain=g.cz|lifee.cz|nkz.cz|svetzeny.cz
 @@||ads.cdn.tvb.com^*.key
 @@||ads.colombiaonline.com/ad/$domain=colombiaonline.com
 @@||ads.creative-serving.com/yoc^$domain=youronlinechoices.com
@@ -57012,6 +57012,7 @@ kathmandupost.com##.pt-0
 kathmandupost.com##.sticky--bottom
 katmoviehd.*#%#//scriptlet("abort-current-inline-script", "document.createElement", "/\/main\.js[\s\S]*?document\?document:null/")
 katmoviehd.ma###sidebar > #custom_html-6
+katu.com##div[class^="DisplayAdvert"]
 katv.com##.index-module_adAfterContent__1cww
 kaufland.*##.exp-vision__ext-wrapper--spad
 kaufland.*##.product--spa
@@ -59947,7 +59948,10 @@ mathgames.com##.main-banner-adContainer
 mathgames.com##.right-ad-override
 mathopenref.com##.citeSkyScr
 mathopenref.com##.lowerRect
+mathrubhumi.com##.mpp-ad-container
+mathrubhumi.com##.mpp-main-element-sponsor-container
 mathrubhumi.com##div[id^="ML_DT_"]
+mathrubhumi.com,usanewstoday.club,crictracker.com###stickyunit
 mathsolver.microsoft.com##a[aria-label^="Advertisment."]
 mathway.com###chat-inner > .ch-bubble[data-context="advert"]
 mathway.com###static-ad-right-alt
@@ -60470,6 +60474,8 @@ metro.co.uk##.trs-item > a[rel="sponsored"] + div.excerpt
 metro.co.uk#?#.just-in-widget-container > li:has(> a[rel="sponsored"])
 metro.co.uk#?#.metro-newsfeed__recent-posts > article.metro-newsfeed__recent-post:has(> div.metro-newsfeed-post__content > h2.metro-newsfeed-post__title > span.metro-signpost-ad-feature)
 metro.co.uk#?#.more-posts-thumbs > li.post:has(> a[rel="sponsored"])
+metro.cz###main > table
+metro.cz###r-leaderboardrub
 metro.cz,fights.cz,antiyoutuber.cz,expres.cz,televizeseznam.cz,ahaonline.cz,extra.cz,mobilmania.cz,idnes.cz,aktuality.sk,aktualne.cz,auto.cz,blesk.cz,centrum.cz,cnews.cz,e15.cz,sport.cz,super.cz,tiscali.cz,zive.cz#%#//scriptlet("abort-on-property-read", "Object.prototype.kununu_mul")
 metro.cz,fights.cz,antiyoutuber.cz,expres.cz,televizeseznam.cz,ahaonline.cz,extra.cz,mobilmania.cz,idnes.cz,aktuality.sk,aktualne.cz,auto.cz,blesk.cz,centrum.cz,cnews.cz,e15.cz,sport.cz,super.cz,tiscali.cz,zive.cz#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'kununu_mul')
 metro.cz,fights.cz,antiyoutuber.cz,expres.cz,televizeseznam.cz,ahaonline.cz,extra.cz,mobilmania.cz,idnes.cz,aktuality.sk,aktualne.cz,blesk.cz,centrum.cz,cnews.cz,e15.cz,karaoketexty.cz,novinky.cz,sport.cz,super.cz,tiscali.cz,zive.cz#%#//scriptlet('remove-cookie', '/^adb$|adb\.key|^[a-z]{5,11}$/')
@@ -76695,7 +76701,6 @@ uroda.abczdrowie.pl#?#.article__container > .content-aside .content-aside__item:
 uroda.abczdrowie.pl#?#.article__textbox:matches-css(background-image: /^url\(https:\/\/uroda\.abczdrowie\.pl\/media\/images\/commb\.png/)
 urtech.ca###text-17:last-child
 usagoals.*#%#//scriptlet("prevent-window-open")
-usanewstoday.club,crictracker.com###stickyunit
 usasexguide.nl###uiISGAdFooter
 usasexguide.nl##[href^="https://instable-easher.com/"]
 usatoday.com###acm-ad-tag-lawrence_dfp_desktop_arkadium
