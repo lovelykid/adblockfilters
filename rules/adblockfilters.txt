@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250325001433
-! Last modified: 2025/03/25 00:14:33
-! Blocked Filters: 97265
+! Version: 20250325085134
+! Last modified: 2025/03/25 08:51:34
+! Blocked Filters: 97269
 !
 ###AC_ad
 ###AD_160
@@ -21032,6 +21032,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /poppy^$script,domain=pornq.com|see.xxx
 /popu.js$script
 /popunder.$popup
+/popunder/in/click/*
 /popunder/in/click/*$popup
 /popunder1.js$script
 /popunder1000.js$script
@@ -27033,6 +27034,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||c.amazon-adsystem.com/aax2/apstag.js?_=$domain=skill4ltu.eu
 @@||c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js$domain=atozmath.com
 @@||c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js$xmlhttprequest,domain=client.falixnodes.net
+@@||c.aps.amazon-adsystem.com/apstag.js$domain=ign.com
 @@||c.betrad.com/geo/ba.js$domain=boston.com|calgaryherald.com|calgarysun.com|celebuzz.com|infinitiev.com|montrealgazette.com|saveur.com
 @@||c.betrad.com/geo/h1.js$domain=video.corriere.it
 @@||c.betrad.com/pub/c/*.js$domain=video.corriere.it
@@ -27394,6 +27396,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||cdn.wwads.cn/js/makemoney.js$domain=docsmall.com
 @@||cdn.wwads.cn/js/makemoney.js$domain=nodejs.cn
 @@||cdn.yamibuy.net^$stealth
+@@||cdn.ziffstatic.com/pg/ign.js$domain=ign.com
+@@||cdn.ziffstatic.com/pg/ign.prebid.js$domain=ign.com
 @@||cdn1.img4kora.com/assets/js/clever_ads.js
 @@||cdn61.zvooq.com/track/stream^$stealth
 @@||cdnb.4strokemedia.com/carousel/v4/comscore-JS-$script
@@ -37626,6 +37630,7 @@ amazon.*###sponsoredProducts2_feature_div
 amazon.*###sponsoredProducts_feature_div
 amazon.*###typ-recommendations-stripe-1
 amazon.*###typ-recommendations-stripe-2
+amazon.*##.AdsCard_container__K6vmo
 amazon.*##.amzn-safe-frame-container
 amazon.*##.dp-widget-card-deck:has([data-ad-placement-metadata])
 amazon.*##.s-result-item:has([data-ad-feedback])
@@ -41327,6 +41332,7 @@ brushes8.com##.baidugg580
 brushes8.com##.zjianad
 brutal.io##.bannerBox
 bryk.pl##.omnibusBannerContainer
+bs.cimanow.cc#@%#//scriptlet('abort-on-stack-trace', 'Image', '?v=')
 bs.to#%#//scriptlet("abort-current-inline-script", "Date", "a.href,a.href")
 bsc.news,web3wire.news##.banner-one
 bscscan.com###ContentPlaceHolder1_lblTextAd
@@ -47155,7 +47161,6 @@ enews.tw##div[id^="adFrame"]
 enewspaper.sandiegouniontribune.com##div[id^="ext-readerbannerad-"]
 engadget.com###LB-MULTI_ATF
 engadget.com##.Mih\(90px\)
-engadget.com##.Py\(30px\).Bgc\(engadgetGhostWhite\)
 engadget.com##.caas-da
 engadget.com##.da-container
 engadget.com##.post-article-ad
@@ -47164,6 +47169,8 @@ engadget.com##.wafer-benji
 engadget.com##div[data-component="GeminiAdItem"]
 engadget.com##div[data-wf-image-beacons]
 engadget.com##div[id^="sda-LDRB2-"]
+engadget.com##li.lg\:min-h-\[234px\]
+engadget.com##section.md\:min-h-\[310px\]
 engadget.com##ul[data-component="LatestStream"] > li[class*="engadgetGutter"]:has(> a[data-ylk*=":Sponsored"])
 engadget.com#?##post-right-col > div[class]:has(> #RR)
 engadget.com#?#.Py\(40px\):-abp-has(> article > .D\(f\) > .Pos\(r\)[data-ylk*=":AD;"])
@@ -65684,6 +65691,7 @@ pmsarkarijob.com#@#.ad-space
 pmsarkarijob.com#@#.ad-unit:not(.textads)
 pmsarkarijob.com#@#.ad-zone
 pmsarkarijob.com#@#.adsbox
+pmvhaven.com#%#//scriptlet('abort-on-property-read', 'exoJsPop101')
 pmvhaven.com#%#//scriptlet('prevent-element-src-loading', 'img', 's3t3d2y8.afcdn.net/')
 pndx.live#%#//scriptlet("prevent-window-open")
 png.is#?#.grid > .grid__item > img[onload="reloadma()"] + .alert-info:contains(/^These ads help/)
@@ -90494,10 +90502,6 @@ zzzyk.com###Tinfo
 ||msn.com/spartan/dhp/*/ecpajax/*&externalContentProvider=
 ||msn.ynet.com/c/tj_comm.js
 ||mssdk*.capcutapi.com^
-||mssdk*.tiktok.com^
-||mssdk*.tiktokv.eu^
-||mssdk*.tiktokv.us^
-||mssdk*.tiktokw.us^
 ||mssdk*.zijieapi.com^
 ||msstatic.com/huya/main/img/mc-recom_
 ||msstatic.com/huya/main3/assets/modules/CommercialAdSdk/$script
