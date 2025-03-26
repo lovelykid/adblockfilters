@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250326001245
-! Last modified: 2025/03/26 00:12:45
-! Blocked Filters: 97285
+! Version: 20250326085104
+! Last modified: 2025/03/26 08:51:04
+! Blocked Filters: 97295
 !
 ###AC_ad
 ###AD_160
@@ -11006,6 +11006,7 @@
 ##.ggw
 ##.giant_pushbar_ads_l
 ##.glacier-ad
+##.gliaplayer-container
 ##.globalAd
 ##.global_video_bottom_dbtc
 ##.gmr-bannerpopup
@@ -17182,6 +17183,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .tovarro.com^
 .tpm.pw^
 .tradewhy.cn//openemail/$image
+.travelperk.com/e/o/$image
 .travis-ci.com/r/$image
 .tripadvisor.com/MptUrl?$image
 .tripadvisor.com/q/$image
@@ -24615,7 +24617,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://dreemdmbabys.oss-cn-
 ://e.*/open?$image
 ://elqtrk.
-://email.*/e/o/
 ://email.*/o/$image
 ://fallback.*/collector
 ://fathom.$domain=~fathom.fm|~fathom.info|~fathom.io|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
@@ -26789,6 +26790,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||beelink.in/ad/advertisement.js
 @@||beermoneyforum.com^$generichide
 @@||beinconnect.com.tr^$extension="AdGuard Popup Blocker"
+@@||beinconnect.com.tr^$stealth
 @@||beinconnect.com.tr^$stealth=donottrack|webrtc
 @@||beinsports.com/wp-content/themes/bein/dist/scripts/fuckadblock.js
 @@||bejav.net^$generichide
@@ -29259,6 +29261,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||gobrowse.net^$generichide
 @@||gocomics.com/assets/ad-dependencies-$script,~third-party
 @@||godisagamer.org^$generichide
+@@||godlikeproductions.com/adblock/js/checks/fingerprint.js$domain=godlikeproductions.com
 @@||gofobo.com^$generichide
 @@||gogoanime.*//page-recent-release*.html
 @@||gogoanime.cool^$generichide
@@ -35280,6 +35283,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||tlc.com^$generichide
 @@||tm.jsuol.com.br/modules/external/admanager/noticias_ads.js$domain=uol.com.br
 @@||tm.r-ad.ne.jp/128/ra346756.js$script,domain=hpdsp.net
+@@||tm.regions.com/tags.js$~third-party
 @@||tmail.io^$generichide
 @@||tmall.com/add?
 @@||tmall.com/go/*/banner.php
@@ -37277,6 +37281,7 @@ airevue.net,stfly.*#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_a
 airevue.net,stfly.*#%#//scriptlet('abort-current-inline-script', 'document.createElement', '.onerror')
 airfactsjournal.com###media_image-3
 airfactsjournal.com##.avia_image
+airhint.com##div[data-fuse]
 airmail.news##am-display[fetched="fetched"]
 airmail.news,govevents.com,protipster.com##.display
 airmore.com##.thead
@@ -45079,7 +45084,7 @@ deepbrid.com##.content > div.rounded-md.text-theme-10
 deepbrid.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "adblock")
 deepdotweb.com###sidebar > div#text-5
 deepdotweb.com##img[width="330"][height="104"]
-deepfake-porn.com,x-picture.com##.happy-sidebar
+deepfake-porn.com,sexkbj.com,x-picture.com##.happy-sidebar
 deepfakeporn.net##.primary > li.highlight ~ li
 deepgoretube.site#@##fwdevpDiv0
 deepl.com##div[class]:has(> aside[data-testid="write-promo-banner"])
@@ -51551,6 +51556,7 @@ gocomics.com#%#//scriptlet("set-constant", "amuGc.displayAds", "false")
 godbolt.org###ces
 godisageek.com###custom_html-4
 godisageek.com###text-11
+godlikeproductions.com##.rightpanel_ipad > div:has(> center > [data-type="_mgwidget"])
 godlikeproductions.com#@#img[width="468"][height="60"]
 godtspeed.xyz#%#//scriptlet('prevent-element-src-loading', 'script', 'adsbygoogle')
 gofile.io###adsGoogle
@@ -52882,6 +52888,8 @@ heavy.com###fp-popup-modal
 heavy.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 heavyfetish.com##.hf-header-banner
 heb.com##div:has(> div[id^="hrm-banner-shotgun"])
+heb.com#?#div:has(> div > div[class^="Carousel_wrapper"]:-abp-contains(Promoted))
+heb.com#?#div:has(> div > div[class^="ModuleSet_moduleSetContainer"]:-abp-contains(Promoted))
 heb.com#?#div[class^="sc-"]:-abp-has(> div[data-qe-id="productCard"]:-abp-contains(Promoted))
 hebdenbridge.co.uk#@#.smallads
 hecker.likesyou.org#%#//scriptlet('prevent-xhr', 'pagead2.googlesyndication.com')
@@ -63316,6 +63324,7 @@ nhaccuatui.com###eventBannerLeft
 nhaccuatui.com###eventBannerTop
 nhaccuatui.com##div[class^="adv_"]
 nhentai.com##.pb-0.w-100[style]
+nhentai.com##main > .row:has(> a[target="_blank"])
 nhentai.net#%#//scriptlet("prevent-window-open")
 nhentai.net#%#//scriptlet('set-constant', '_n_app.popunder', 'null')
 nhentai.to###content
@@ -67483,7 +67492,7 @@ puzzles.bestforpuzzles.com#@#display-ad-component
 pv-magazine.*,pv-magazine-usa.com,pv-magazine-australia.com###home-top-rectangle-wrap-1
 pv-magazine.*,pv-magazine-usa.com,pv-magazine-australia.com###home-top-rectangle-wrap-2
 pv-magazine.*,pv-magazine-usa.com,pv-magazine-australia.com###home-top-rectangle-wrap-3
-pvpoke-re.com#%#//scriptlet('set-constant', 'firstChecker', 'noopFunc')
+pvpoke-re.com#%#//scriptlet('prevent-addEventListener', '', '/\(\s*\)\s*=>.*_0x/')
 pvpoke.com##div[id^="nitro-sidebar-"]
 pvstreams.com##body > br
 pvstreams.com#%#//scriptlet("abort-on-property-read", "nativeInit")
@@ -71976,7 +71985,8 @@ standardy.pl##div[class^="banner-"]:not(.banner-swiper-cls)
 stapadblockuser.info#%#//scriptlet("prevent-window-open")
 stapadblockuser.xyz#%#//scriptlet('prevent-window-open')
 staples.com##.SearchRootUX2__bannerAndSkuContainer
-staples.com##div[class^="sku-configurator__banner"]
+staples.com##div[class^="sku-configurator__banner"]:has([aria-label="Sponsored Products"])
+staples.com#?#.side-by-side-carousel__carousel_container:-abp-contains(Sponsored Products)
 star-history.com###app > div.relative > div.relative.justify-end + div.fixed.right-0
 star-history.com##.fixed.right-0
 star-history.com#?#.mx-auto:has(> div.w-full > a[href][target="_blank"] > img[src^="https://star-history.com/sponsors/"])
@@ -85725,7 +85735,6 @@ zzzyk.com###Tinfo
 ||digit.in/blockarticledetailad/
 ||digit.in/js/ads_management.js
 ||digital.flytedesk.com/js/head.js
-||digital.newmedia.az/web/web_page_2.html
 ||digitalmediaworld.tv/images/banners/
 ||digitaloceanspaces.com/advertise/$domain=unb.com.bd
 ||digitaloceanspaces.com/advertisements/$domain=thefinancialexpress.com.bd
@@ -91066,7 +91075,6 @@ zzzyk.com###Tinfo
 ||newepisodes.co/atag.js
 ||newepisodes.co/sw.js
 ||newkerala.com/banners/amazon
-||newmedia.az^$third-party
 ||newrelic.com^$third-party
 ||news.99k.tw/open/open*.php
 ||news.banggood.com/mo/$image,third-party
@@ -91136,6 +91144,7 @@ zzzyk.com###Tinfo
 ||ngontinh24.com/js/newsike.js
 ||ngpvan.com/v1/Track/
 ||ngs.ru/s/
+||nhentai.com/r34games.gif
 ||nhentai.net/api/_/popunder?$popup
 ||nhregister.com/413gkwMT/init.js
 ||nhutgg.io.vn/js/ads-blocked.js
@@ -94027,6 +94036,7 @@ zzzyk.com###Tinfo
 ||ssstik.io/js/script_ssstik.min.js$replace=/("undefined"!=typeof powerTag[\s\S]*?onComplete[\s\S]*?(.)(window\.powerTagReward&&\(window\.location\.href=window\.powerTagReward\)))/setTimeout(()=>{\$3}\$2 1000)\$2\$1/
 ||ssyy881.com/zz/
 ||st-*.dynamicyield.com^
+||st-n.ads*-adnow.com^
 ||st-n.ads*-adnow.com^$third-party
 ||st.1001fonts.net/build/common/ads.*.$script,stylesheet
 ||st.chatango.com/js/*/*/RklModule.js
