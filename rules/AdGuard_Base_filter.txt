@@ -70873,10 +70873,6 @@ $popup,third-party,domain=dood.ws,badfilter
 !##################
 !
 !
-! https://github.com/AdguardTeam/AdguardFilters/issues/201894
-||luluvdo.com^$badfilter
-! https://github.com/AdguardTeam/AdguardFilters/issues/201893
-@@||assets.msn.com/resolver/api/resolve/v3/config/?expType=AppConfig&expInstance=default&apptype=finance&$domain=msn.com
 ! zone.msn.com - game stuck in loading screen
 @@||ams.cdn.arkadiumhosted.com/advertisement/video/stable/games.msn.com/video-ads.js$domain=zone.msn.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/201500
@@ -135275,7 +135271,7 @@ browsershots.org#@#.advert_area
 ||zillastream.com/api/$popup
 /assets/bn/movie.jpg$image,domain=vidstream.pro
 /pmc-adm-v2/build/setup-ads.js$domain=bgr.com|deadline.com|rollingstone.com
-/resolver/api/resolve/v3/config/?$xmlhttprequest,domain=msn.com
+/resolver/api/resolve/v3/config/?expType=AppConfig&expInstance=default&apptype=weather&$domain=msn.com
 asgg.php$domain=ghostbin.me|paste.fo
 ||0xtracker.com/assets/advertising/
 ||123.manga1001.top^
@@ -144457,6 +144453,7 @@ bing.com##.b_ad
 bing.com##.b_adBottom
 bing.com##.b_adLastChild
 bing.com##.b_adPATitleBlock
+bing.com##.b_algo:has(> .b_title > h2 > .b_ads1line)
 bing.com##.b_spa_adblock
 bing.com##.mapsTextAds
 bing.com##.mma_il
