@@ -38512,6 +38512,7 @@ meczyki.pl##.container > .row > .col-md-4 > .widget-wrapper:has(> .widget-wrappe
 ! https://github.com/AdguardTeam/AdguardFilters/issues/101259
 ! https://github.com/AdguardTeam/AdguardFilters/issues/94538
 ! https://github.com/AdguardTeam/AdguardFilters/issues/93480
+meczyki.pl##.banner-wrapper
 meczyki.pl#$#:not(.onnetwork-banner) > .placeholder:not(.onnetwork-banner) { height: 0 !important; min-height: 0 !important; visibility: hidden !important; }
 meczyki.pl##.d-none > .sticky.margin > .box.margin[data-area-id]
 meczyki.pl##body .ejected-banner
@@ -38723,8 +38724,9 @@ events.gry-online.pl#$#body { background-image: none !important; }
 gry-online.pl#@#.adspace
 gry-online.pl#%#//scriptlet("set-constant", "adbstatus", "false")
 gry-online.pl##.top-extra-tlo > #baner-outer ~ div[id] > a[style^="display:block;width:100%;max-width:"] > img[src^="/im/"]
+! https://github.com/AdguardTeam/AdguardFilters/issues/202088
 ! Fixes video player, for example here - https://www.gry-online.pl/newsroom/w-maju-robi-sie-tak-tloczno-od-ciekawych-premier-ze-indika-uciekl/z528fad
-gry-online.pl#%#(function(){var a={cmd:[],public:{getVideoAdUrl:function(){},createNewPosition:function(){},refreshAds:function(){},setTargetingOnPosition:function(){},getDailymotionAdsParamsForScript:function(c,a){if("function"==typeof a)try{if(1===a.length){a({})}}catch(a){}}}};a.cmd.push=function(b){let a=function(){try{"function"==typeof b&&b()}catch(a){}};"complete"===document.readyState?a():window.addEventListener("load",()=>{a()})},window.jad=a})();
+tvgry.pl,gry-online.pl#%#(function(){var a={cmd:[],public:{getVideoAdUrl:function(){},createNewPosition:function(){},refreshAds:function(){},setTargetingOnPosition:function(){},getDailymotionAdsParamsForScript:function(c,a){if("function"==typeof a)try{if(1===a.length){a({})}}catch(a){}}}};a.cmd.push=function(b){let a=function(){try{"function"==typeof b&&b()}catch(a){}};"complete"===document.readyState?a():window.addEventListener("load",()=>{a()})},window.jad=a})();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/81088
 tvgry.pl,gry-online.pl###baner-outer
 ! https://github.com/AdguardTeam/AdguardFilters/issues/80563
@@ -49310,6 +49312,8 @@ $subdocument,third-party,denyallow=disqus.com,domain=welovemanga.one
 ! NOTE: Specific rules
 !
 !
+wjla.com##div[class^="DisplayAdvert-module_"]
+||wjla.com/resources/video/players/prod/dist/*/advertising.js
 fnlondon.com##.grid__rail_top:has(> .adWrapper)
 fnlondon.com##.grid__content_padded_bottom_border:has(> .adWrapper)
 truepeoplesearch.com##.card > div:has(div.h5 > span[style="padding-bottom:5px;margin-top:-10px;font-size:.8rem;"])
@@ -59178,7 +59182,7 @@ constructionenquirer.com##.ad-list
 pdr.net###ehsBanner
 mysexgames.com##table[style^="background-color:#eeeeee; width:800px; height:270px;"]
 ||madnessporn.com/mad/
-everydayporn.co,stileproject.com,zeenite.com,shemalesin.com,faptube.com,cambay.tv,hqbang.com,blowjobs.pro,ebony8.com,amateurest.com,watchporn.to,bravoerotica.net,thothd.com,hairyerotica.com,theporngod.com,sexoverdose.com,bestpornflix.com,4porn4.com,kuxxx.com,gettubetv.com,hoes.tube,cluset.com,xtits.*,pornsai.com,jizzberry.com,love4porn.com,cartoonprn.com,celebwhore.com,sexcams-24.com,camwhorescloud.com,bigtitslust.com,camfox.com,pornchimp.com,xmegadrive.com,tubsexer.*,theyarehuge.com,yourporngod.com,thebussybandit.com##.table
+squirting.world,everydayporn.co,stileproject.com,zeenite.com,shemalesin.com,faptube.com,cambay.tv,hqbang.com,blowjobs.pro,ebony8.com,amateurest.com,watchporn.to,bravoerotica.net,thothd.com,hairyerotica.com,theporngod.com,sexoverdose.com,bestpornflix.com,4porn4.com,kuxxx.com,gettubetv.com,hoes.tube,cluset.com,xtits.*,pornsai.com,jizzberry.com,love4porn.com,cartoonprn.com,celebwhore.com,sexcams-24.com,camwhorescloud.com,bigtitslust.com,camfox.com,pornchimp.com,xmegadrive.com,tubsexer.*,theyarehuge.com,yourporngod.com,thebussybandit.com##.table
 forum.psnprofiles.com##.nn-player-floating
 ||static.crazyshit.com/js/im/im.js
 blackhatworld.com##.bhw-advertise-link
@@ -99260,7 +99264,7 @@ so-net.ne.jp#@##ad-p3
 techymedies.com#@##ad-top
 afterdawn.com,download.fi,edukas.fi#@##ad-top-banner-placeholder
 ufoevidence.org#@##ad-wrapper
-sdf-event.sakura.ne.jp#@##ad_1
+riderplanet-usa.com,sdf-event.sakura.ne.jp#@##ad_1
 sdf-event.sakura.ne.jp#@##ad_2
 sdf-event.sakura.ne.jp#@##ad_3
 sdf-event.sakura.ne.jp#@##ad_4
@@ -121780,6 +121784,7 @@ browsershots.org#@#.advert_area
 ||thechoansa.com^
 ||thechronicles2.xyz^
 ||thecoinworsttrack.com^
+||thecontentserver.com^
 ||thecoreadv.com^
 ||theehouho.xyz^
 ||theekedgleamed.com^
@@ -137677,6 +137682,7 @@ jagranjosh.com##.Ad720x90
 thingiverse.com##.AdBanner__adBanner--GpB5d
 surfline.com##.AdBlock_modal__QwIcG
 jagranjosh.com##.AdCont
+ratemyprofessors.com##.AdNoBid__AdContainer-sc-7ofdbw-0
 tvnz.co.nz##.AdOnPause
 issuu.com,racingamerica.com##.AdPlacement
 manabadi.co.in##.AdSW
@@ -143506,6 +143512,7 @@ wideopencountry.com###video-header
 sportskeeda.com###video-player-container--
 onlyinyourstate.com###video1-1
 newseveryday.com###vplayer_large
+ratemyprofessors.com##.VideoPlayer__StyledPlayer-sc-2xyxn3-0
 tvline.com##._video_ti56x_1
 musictimes.com,sciencetimes.com,techtimes.com##.ad_wrapper_video
 indy100.com##.addressed_cls
