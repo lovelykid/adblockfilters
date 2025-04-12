@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250412001349
-! Last modified: 2025/04/12 00:13:49
-! Blocked Filters: 97547
+! Version: 20250412085122
+! Last modified: 2025/04/12 08:51:22
+! Blocked Filters: 97550
 !
 ###AC_ad
 ###AD_160
@@ -18128,7 +18128,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /ad/postbid_handler1.$script
 /ad/window.php?$popup
 /ad300.jpg$image
-/ad300.png$image
 /ad728.png$image
 /ad?count=
 /adBlockDetector/*$script
@@ -54893,6 +54892,7 @@ incredibox.com###box-abp
 incredibox.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 indaily.com.au,posemaniacs.com##.h-\[250px\]
 indaily.com.au,thenewdaily.com.au##.h-\[100px\]
+indeed.com###mosaic-provider-jobcards li:has(.sponsoredJob)
 independent.co.ug##img[width="320"]
 independent.co.uk###main > div[class]:has(> div > div > a[href^="https://tv.apple.com/"])
 independent.co.uk###taboola-mid-article-thumbnails-ii
@@ -83289,6 +83289,7 @@ zzzyk.com###Tinfo
 ||autocentrum.pl^$replace=/(aabv\d[\s\S]*?.=function\(\)\{)return .===.(\}\,)/\$1return\$2/,script
 ||autodealer.co.za/inc/widget/
 ||autoembed.cc/vast/
+||autoembed.cc/vast/vast3.xml
 ||autoembed.to/JS/denur.js
 ||autofan.com.cn/UploadFiles/images/bAdImg.jpg
 ||autofaucets.org^$domain=rifurl.com
@@ -85790,6 +85791,7 @@ zzzyk.com###Tinfo
 ||dj1*.online^
 ||dj155.com/gg/
 ||dj97.com/api.php?mod=ad&
+||djdedu.net/static/*.gif
 ||djerycom.ug/obulango/
 ||djicdn.com/uploads/ad_image_file/
 ||djljz.cn/Plugins/Template/XJLY/js/app.
@@ -88339,6 +88341,7 @@ zzzyk.com###Tinfo
 ||ibradome.com/ba/chargi.js
 ||ibtimes.com/front/js/counter.js
 ||ibvpn.com/img/banners/
+||ibyteimg.com/obj/ad-$xmlhttprequest
 ||ic.c4assets.com/bips/gogglebox/brand/e8bccf98-011b-4ea9-8476-a09136f4012f.jpg
 ||icaile.com/z.php?id=
 ||icao4.com/uploads/pic/2.jpg
