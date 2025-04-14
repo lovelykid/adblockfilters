@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250414001303
-! Last modified: 2025/04/14 00:13:03
-! Blocked Filters: 97547
+! Version: 20250414085509
+! Last modified: 2025/04/14 08:55:09
+! Blocked Filters: 97566
 !
 ###AC_ad
 ###AD_160
@@ -21579,7 +21579,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /sfCounter/*
 /sfdc/networktracking.js
 /sfsafsadfjbbj-dsafjnb-1321533417.
-/sft-prebid.js$script
 /sgtracker.js
 /sh588com888/*
 /shangvsnhfbrq220923.js
@@ -21821,10 +21820,12 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /stats/pv.php?
 /stats/record.php?
 /stats/record/*
+/stats/record_visit/*
 /stats/search-log
 /stats/transp.bmp
 /stats/v2/visit?
 /stats/visitors
+/stats/web_vitals/*$ping
 /stats/welcome.php?
 /stats?aid=
 /stats?blog_
@@ -23098,7 +23099,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 1280wnam.com##a[href^="http://www.milwaukeezoo.org/visit/animals/"]
 1280wnam.com##a[href^="https://wistatefair.com/fair/tickets/"]
 12jav.net###custom_html-8
-12news.com,9news.com,9to5google.com,9to5mac.com,aad.org,advfn.com,all3dp.com,allaboutcookies.org,allnovel.net,amny.com,athleticbusiness.com,audiokarma.org,beeradvocate.com,beliefnet.com,bizjournals.com,biznews.com,bolavip.com,breakingac.com,britishheritage.com,businessinsider.com,capemaynjdaily.com,cbs8.com,cc.com,ccjdigital.com,centralbucksnews.com,dailytrust.com,delconow.com,delish.com,downbeach.com,driven.co.nz,dutchnews.nl,ecr.co.za,electrek.co,engineeringnews.co.za,equipmentworld.com,etcanada.com,euromaidanpress.com,fastcompany.com,fishermap.org,footyheadlines.com,fox10phoenix.com,fox13news.com,fox26houston.com,fox29.com,fox2detroit.com,fox32chicago.com,fox35orlando.com,fox4news.com,fox5atlanta.com,fox5dc.com,fox5ny.com,fox7austin.com,fox9.com,foxbusiness.com,foxla.com,foxnews.com,funkidslive.com,gfinityesports.com,globalspec.com,gmanetwork.com,grammarbook.com,greatbritishchefs.com,greatitalianchefs.com,hbr.org,highdefdigest.com,historynet.com,horshamnow.com,howstuffworks.com,huffpost.com,ibtimes.sg,insidehook.com,insider.com,intouchweekly.com,irishcentral.com,karanpc.com,khou.com,koat.com,ktvu.com,lifeandstylemag.com,longislandpress.com,macstories.net,mail.com,mangakakalot.app,memuplay.com,metro.us,metrophiladelphia.com,minecraftforum.net,miningweekly.com,mixed-news.com,mobilesyrup.com,modernhealthcare.com,msnbc.com,namemc.com,nbcnews.com,newrepublic.com,northpennnow.com,nzherald.co.nz,ocnjdaily.com,oneesports.gg,opb.org,outkick.com,papermag.com,perkvalleynow.com,phillydaily.com,physiology.org,pixiv.net,podcastaddict.com,punchng.com,qns.com,realsport101.com,reason.com,refinery29.com,roadandtrack.com,scroll.in,seaislenews.com,seattletimes.com,songkick.com,sportskeeda.com,thebaltimorebanner.com,thedailybeast.com,thelocal.at,thelocal.ch,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se,themarketherald.ca,thenationonlineng.net,thenewstack.io,thetimes.com,tmz.com,toofab.com,uploadvr.com,usmagazine.com,vanguardngr.com,wildtangent.com,willowgrovenow.com,wogx.com,worldsoccertalk.com,wral.com##.ad-container
+12news.com,9news.com,9to5google.com,9to5mac.com,aad.org,advfn.com,all3dp.com,allaboutcookies.org,allnovel.net,amny.com,athleticbusiness.com,audiokarma.org,beeradvocate.com,beliefnet.com,bizjournals.com,biznews.com,bolavip.com,breakingac.com,britishheritage.com,businessinsider.com,capemaynjdaily.com,cbs8.com,cc.com,ccjdigital.com,centralbucksnews.com,dailytrust.com,delconow.com,delish.com,downbeach.com,driven.co.nz,dutchnews.nl,ecr.co.za,electrek.co,engineeringnews.co.za,equipmentworld.com,etcanada.com,euromaidanpress.com,fastcompany.com,fishermap.org,footyheadlines.com,fox10phoenix.com,fox13news.com,fox26houston.com,fox29.com,fox2detroit.com,fox32chicago.com,fox35orlando.com,fox4news.com,fox5atlanta.com,fox5dc.com,fox5ny.com,fox7austin.com,fox9.com,foxbusiness.com,foxla.com,foxnews.com,funkidslive.com,gfinityesports.com,globalspec.com,gmanetwork.com,grammarbook.com,greatbritishchefs.com,greatitalianchefs.com,hbr.org,highdefdigest.com,historynet.com,horshamnow.com,howstuffworks.com,huffpost.com,ibtimes.sg,inc.com,insidehook.com,insider.com,intouchweekly.com,irishcentral.com,karanpc.com,khou.com,koat.com,ktvu.com,lifeandstylemag.com,longislandpress.com,macstories.net,mail.com,mangakakalot.app,memuplay.com,metro.us,metrophiladelphia.com,minecraftforum.net,miningweekly.com,mixed-news.com,mobilesyrup.com,modernhealthcare.com,msnbc.com,namemc.com,nbcnews.com,newrepublic.com,northpennnow.com,nzherald.co.nz,ocnjdaily.com,oneesports.gg,opb.org,outkick.com,papermag.com,perkvalleynow.com,phillydaily.com,physiology.org,pixiv.net,podcastaddict.com,punchng.com,qns.com,realsport101.com,reason.com,refinery29.com,roadandtrack.com,scroll.in,seaislenews.com,seattletimes.com,songkick.com,sportskeeda.com,thebaltimorebanner.com,thedailybeast.com,thelocal.at,thelocal.ch,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se,themarketherald.ca,thenationonlineng.net,thenewstack.io,thetimes.com,tmz.com,toofab.com,uploadvr.com,usmagazine.com,vanguardngr.com,wildtangent.com,willowgrovenow.com,wogx.com,worldsoccertalk.com,wral.com##.ad-container
 12tomatoes.com###footboard
 12tomatoes.com##.sheknows-infuse-ad-callout
 12tomatoes.com,allwomenstalk.com,bloomberg.com,datpiff.com,hockeybuzz.com,koreaboo.com,logotv.com,newcartestdrive.com,news.sky.com,news.tvguide.co.uk,onthesnow.ca,onthesnow.co.nz,onthesnow.co.uk,onthesnow.com,penny-arcade.com,publishersweekly.com,skysports.com,sportsnet.ca,thedrinknation.com,theserverside.com###leaderboard
@@ -65688,6 +65689,7 @@ pirate-bays.net###vpnModal
 pirate.ws#$#body { padding-top: 70px !important; }
 pirate.ws#%#window.spoof_weer2edasfgeefzc = true;
 piratebay-proxy-list.com,pirate-bays.net##.message-wrap
+piratebay.live##a[href^="https://thesurferprotector.com/"]
 piratebayproxy.live,thepiratebay10.org,thepiratebay.party,pirate-bays.net,pirateproxy.live##a[href^="https://www.onlineuserdefender.com/"]
 piratehaven.xyz#%#//scriptlet('prevent-eval-if', '=__htas')
 pirateproxy.space#%#//scriptlet("set-constant", "openNewURLInTheSameWindow", "noopFunc")
@@ -70793,6 +70795,7 @@ slipstick.com##.lastad
 slipstick.com##.sidebar > #text-257
 slipstick.com##.sidebar section[id^="custom_html-"] a > img:not([alt*="donation"])
 slipstick.com##p[style="text-align: center;"] > a[href^="http://amzn.to/"] > img
+sloanreview.mit.edu##.no-mobile--ad
 slobodnadalmacija.hr##.container--break
 slobodnadalmacija.hr##.item__ad-center
 slobodnadalmacija.hr#%#//scriptlet('set-constant', 'userAdFree', 'yes')
@@ -79837,6 +79840,7 @@ xszav2.com#%#//scriptlet('abort-on-property-read', '__ENSO_VAST')
 xszav2.com#%#//scriptlet('abort-on-property-write', 'zoneId')
 xszav2.com#%#//scriptlet('prevent-setTimeout', '$("body").html')
 xszav2.com#@#.ad-content
+xtapes.to##.content-banner
 xtapes.to##a[href="https://streamwish.com/"] > img
 xtapes.to#%#//scriptlet("abort-current-inline-script", "jQuery", "pop_init")
 xteensex.net##.bokorasumi
@@ -81518,6 +81522,7 @@ zzzyk.com###Tinfo
 ||1pwx.com/js/ck.js
 ||1watchmygf.com/js/mes.js
 ||1watchmygf.com/js/mygf*.js
+||1win.com^$ping
 ||1wnurc.com^$popup
 ||1worldsync.com/log?
 ||1x001.com^$popup
@@ -82489,6 +82494,7 @@ zzzyk.com###Tinfo
 ||aisixiang.com/images/*-20
 ||aisy19.com/dm/
 ||aitaotu.com/style/js/aitaotu
+||aitotop.com^*/collect.js?
 ||aiuw.com/images/*?from=ad
 ||aiv-delivery.net/Events/
 ||aiv-delivery.net/v1/ReportEvent
@@ -83379,6 +83385,7 @@ zzzyk.com###Tinfo
 ||azedu.az/share/share.php
 ||azedu.az/uploads/adds/
 ||azerbaycan24.com/wp-content/uploads/*/on-off-electronics_n.gif
+||azerty.nl/ambannerslider/analytic/
 ||azhibo.*/media/aimg/*.gif
 ||azhibo.*images/leisu.png
 ||azlyrics.biz/bannergrammarquiz.png
@@ -84352,6 +84359,7 @@ zzzyk.com###Tinfo
 ||camseek.tv/live/live.php
 ||camsmut.com/vidi/$image
 ||camsmut.com/vidri/
+||camspacelive.com/widgets/
 ||camspic.com/imguang/*.gif
 ||camvideos.tv/*ad300_250.php
 ||camvideos.tv/CAMVID.php
@@ -86689,6 +86697,7 @@ zzzyk.com###Tinfo
 ||films5k.com/asset/*.min.js?*=*&
 ||filmstreaminghd.biz/player/banner.png
 ||filmstreaminghd.biz/player/play.php
+||filmvandaag.nl/pl/js/script.js
 ||filmweb.pl/adbchk?v=
 ||filtercams.com/static/images/banners/
 ||filterforge.com/images/banners/
@@ -91176,6 +91185,7 @@ zzzyk.com###Tinfo
 ||netquattro.com/stats/
 ||netreviews.eu/index.php?action=act_access&$third-party
 ||netscape.com/c.cgi?
+||netshoes.com.br/tracking/
 ||nettruyenup.com/data/*/banner/*.gif
 ||nettruyenvip.com/data/sites/*/banner/$domain=nettruyenvip.com
 ||netu.ac/cdn-cgi/trace
@@ -92014,10 +92024,13 @@ zzzyk.com###Tinfo
 ||pinoymovies.es/links/$popup
 ||pinpoll.com^$third-party
 ||pinyuege.net/template/pinygm/public/js/
+||pipeline.balkstercourant.nl^$~script
+||pipeline.dvhn.nl^$~script
 ||pipeline.lc.nl^$~script
 ||pipeline.rd.nl^$~script
 ||pipi.cn/player/
 ||pipix.cc/gg.gif
+||piratebay.live/static/ads/
 ||piratebays.fi/staticproxy/img/download1.png
 ||pirateiro.com^$csp=script-src 'self' 'unsafe-inline' https://hcaptcha.com *.hcaptcha.com
 ||pisshamster.com/prerolls/
@@ -92075,6 +92088,8 @@ zzzyk.com###Tinfo
 ||play-asia.com^$image,subdocument,third-party
 ||play.gamezop.com^$domain=gplinks.co
 ||play.ht/views/
+||play.pp9yy.com/hall/home/heartbeat
+||play.pp9yy.com/hall/v1/netstat/
 ||play.tv3.ee/static/scripts/adroot/$script,xmlhttprequest,redirect=noopjs,important
 ||play247.hu/listaapi.php^$third-party
 ||play6111.com/js/
@@ -93183,6 +93198,7 @@ zzzyk.com###Tinfo
 ||rutube.ru/counters.html?
 ||rutube.ru/dbg/player_stat?
 ||ruw.de/js/trackSidebarClicks.js
+||ruwiki.ru/w/rest.php/metrics/
 ||ruxox.ru/js/plears.js
 ||ruyig.com/730x76.png
 ||rv.modanisa.com^$script
@@ -93859,6 +93875,7 @@ zzzyk.com###Tinfo
 ||skoom.de/gratis-counter/
 ||skplanet.com/pixel?
 ||skplanet.com/pixelb?
+||skrotrack.com/campaign/$popup
 ||skroutz.gr/analytics/
 ||skycheats.com^$popup,domain=elitepvpers.com
 ||skylineservers.com/images/banners/skyline-servers728x90_02.jpg
@@ -94989,6 +95006,7 @@ zzzyk.com###Tinfo
 ||thesun.co.uk/assets/client/analyticsListeners~
 ||thesun.co.uk/assets/client/newrelicExperimentTracking~
 ||thesun.ie/track?
+||thesurferprotector.com^$popup,domain=piratebay.live
 ||theteenbay.co/network/go.php
 ||thetimes.co.uk/track?
 ||thetruth.com/pd.js
@@ -95329,6 +95347,7 @@ zzzyk.com###Tinfo
 ||travelpayouts.com/widgets/$domain=news.milli.az
 ||travian.dk/?uc=$third-party
 ||travix.com/log
+||travix.com/metrics
 ||trbas.com^$third-party
 ||trck.*.prod-na.turntable.sonic.advertising.amazon.dev^
 ||trcyrn.com^$popup
