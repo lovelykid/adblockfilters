@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250421001231
-! Last modified: 2025/04/21 00:12:31
-! Blocked Filters: 97796
+! Version: 20250421085531
+! Last modified: 2025/04/21 08:55:31
+! Blocked Filters: 97805
 !
 ###AC_ad
 ###AD_160
@@ -19902,6 +19902,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /gtm.js?$popup
 /gtm.min.js
 /gtm/gtm-
+/gtmDataLayer.js
 /gtmTracking.js
 /guang/5liao.me.gif
 /guang/guang*.js
@@ -49819,7 +49820,13 @@ foxfaucet.com#%#window.setTimeout=function() {};
 foxgay.com##body > .pb_footer
 foxgreat.com#$#body .google-ad { display: block !important; }
 foxgreat.com#@#.google-ad
+foxhq.com##.bar-items-block
+foxhq.com##.full-text:has(> h2 > a[href][target="_blank"] img)
+foxhq.com##.menu > ul > li:has(> a.sponsor)
+foxhq.com##.menu > ul > li:not(:has(> a[href^="https://www.foxhq.com/"]))
+foxhq.com##body > div[style]:has(> #popinContentDiv)
 foxhq.com##td[alt="FoxHQ BG"] > div[align="center"] > a[rel="nofollow"]
+foxhq.com#%#//scriptlet('prevent-addEventListener', 'load', 'crakPopInParams')
 foxnews.com##.sticky-pre-header
 foxnews.com##.sticky-pre-header-inner
 foxnews.com##article[class|="article story"]:has(.sponsored-by)
@@ -82243,6 +82250,7 @@ zzzyk.com###Tinfo
 ||28hse.com/adsman/www/images/
 ||28kys.com/92kviptupian/
 ||28kys.com/cpstupian/
+||28lu.net^*/042107.
 ||29spp.com/js/tj.js
 ||2adultflashgames.com/img/677x250_
 ||2biqu.com/static/*/*.js
@@ -96759,6 +96767,7 @@ zzzyk.com###Tinfo
 ||wnyc.org/analytics/
 ||wo-cloud.com^$ping
 ||woaidu.org/images/20180802/3.jpg
+||wodeshucheng.com^*/042107.
 ||wogaa.sg/scripts/wogaa.js
 ||woiden.id/dist/js/red.js
 ||wokao.co/qq/qq.js
