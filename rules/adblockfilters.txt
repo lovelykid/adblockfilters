@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250425001423
-! Last modified: 2025/04/25 00:14:23
-! Blocked Filters: 98075
+! Version: 20250425085313
+! Last modified: 2025/04/25 08:53:13
+! Blocked Filters: 98085
 !
 ###AC_ad
 ###AD_160
@@ -14866,7 +14866,6 @@
 ##[onclick*="content.ad/"]
 ##[onclick*="trackEvent', 'ad"]
 ##[onclick*='fjbglfrv.com']
-##[onclick*='https://i.opiwb.com:']
 ##[onclick*='m.kanshuapp.net']
 ##[onclick*='pypyj.com']
 ##[onclick*='www.l4lui.com'],.col-12.position-relative>b
@@ -18377,6 +18376,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /aff_ad?$script
 /aff_banner/*$image
 /aff_banners/*$image
+/aff_convpixel.js
 /aff_i?offer_id=
 /aff_land?referrer
 /affbanners/*$image
@@ -24753,6 +24753,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://m.*.pw/*/*.js?$third-party
 ://m.*.top/*.js?ssid=_
 ://matomo.$domain=~matomo.org
+://metrics-collector.
 ://mine.torrent.pw^
 ://mint.*/?js
 ://news-*/process.js?id=$third-party
@@ -40491,6 +40492,7 @@ bigtitslust.com,lesbian8.com#$#body.int-body-fixed { overflow: auto !important; 
 bigtitslust.com,sortporn.com##.pignr.item
 bigtitsxxxsex.com##.bnrba
 biguz.net###under
+biguz.net##.rig
 biguz.net##.topb
 biguz.net##iframe[src^="https://ads.exosrv.com/"]
 bigwank.com###mobile_pop
@@ -41441,6 +41443,7 @@ boyoushe.com##a[href^="http"]:not([href*=".boyoushe"]) > .j-lazy
 boysfood.com##.txt-a-onpage
 bqprime.com##.ad-with-placeholder-m__place-holder-wrapper__1_rkH
 bqprime.com##.story-base-template-m__vuukle-ad__g1YBt
+bqug8.com##.content > div[style^="position:"][class$="_b"]
 bradsknutson.com##a[href="http://bradsknutson.com/go/treehouse-banner/"][target="_blank"]
 bradsknutson.com#?##blog-widgets > p + h2:contains(Check These Out)
 brainly.com,brainly.com.br,brainly.co.id,brainly.in,brainly.ph,brainly.pl,brainly.lat,brainly.in,brainly.ro,eodev.com,znanija.com##.brn-ads-box
@@ -83528,6 +83531,7 @@ zzzyk.com###Tinfo
 ||amazonaws.com/cp4pox^
 ||amazonaws.com/dazeddigital.com/Ads-main.js$domain=dazeddigital.com
 ||amazonaws.com/default/tracking?url=
+||amazonaws.com/frame-image-br/bg.png?
 ||amazonaws.com/iglu.acme.com.dev.clixtream/tracker.js
 ||amazonaws.com/j.kissinsights.com/
 ||amazonaws.com/js/reach.js
@@ -84563,6 +84567,7 @@ zzzyk.com###Tinfo
 ||bigtitslust.com/lap70/s/s/suo.php
 ||biguz.net/vast*.php
 ||biguz.net/vast*.php$redirect=nooptext
+||biguz.net/vastcams.xml
 ||bigw.com.au/api/event/
 ||bigw.com.au/events/
 ||bigwank.com/extension/aine/
@@ -86971,6 +86976,7 @@ zzzyk.com###Tinfo
 ||educationalappstore.com/images/sirlinkalot-side.png
 ||educity.cn/self_text/text_disp.aspx?id=
 ||edukacjakrytyczna.pl/detector.js
+||eduplay.rnp.br/collector/
 ||eduuu.com/website/public_js/pc_aso.js
 ||ee.kukaj.me/aoa/$subdocument
 ||ee021.com/Runtime/js/
@@ -90383,6 +90389,7 @@ zzzyk.com###Tinfo
 ||leadpages.net/leadboxes/current/embed.js
 ||leadpages.net^*/tracking.js
 ||leads.media-tools.realestate.com.au/conversions.js
+||leadster.com.br/api/chatbot/events
 ||leak.sx/fag/style/abdetector.style.min.css
 ||learn-cpp.org/static/img/banners/cfk/$image
 ||leboncoin.fr/rav-monitoring/
@@ -93777,6 +93784,7 @@ zzzyk.com###Tinfo
 ||rumble.com/embed/*&autoplay=2$domain=thepostmillennial.com
 ||rumble.com/l/
 ||rumble.com^$domain=tiphero.com
+||rumolog.com/wp-json/burst/v1/track/
 ||rumpelstiltskinhead.com^$third-party
 ||run.app/data.log
 ||run.app/events$domain=imgur.com|worldstar.com|worldstarhiphop.com
@@ -95280,6 +95288,7 @@ zzzyk.com###Tinfo
 ||tabletennisdaily.com/forum/images/banner/
 ||tag-based.s3.*.amazonaws.com^
 ||taggstar.com^*/taggstar.min.js
+||taghike.com^$third-party
 ||tagsd.com^$popup
 ||tagstaticx.com^$third-party
 ||tahoe.com/imp
@@ -96532,6 +96541,7 @@ zzzyk.com###Tinfo
 ||vikiporn.com/contents/images-banners/
 ||vikiporn.com/js/customscript.js
 ||vimeo.com/ablincoln/
+||vimeo.com/add/
 ||vimeocdn.com/add/player-stats?
 ||vimeocdn.com/ga/
 ||vimeocdn.com/js_opt/logging_combined.min.js
