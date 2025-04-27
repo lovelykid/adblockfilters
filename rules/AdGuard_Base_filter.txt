@@ -22572,6 +22572,10 @@ youporn.com$$script:contains(/window\.[\s\S]*?_zone_[\s\S]*?{"zone_id":/)
 !
 ! NOTE: Regular rules
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/204119
+japangaysex.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
+!+ PLATFORM(ios, ext_android_cb, ext_safari)
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=japangaysex.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/203591
 cinema3d.giize.com#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
 cinema3d.giize.com###AntiAdblockcnmu
@@ -22843,12 +22847,14 @@ crazygames.com#$#.adsbox.advertisement.pub_300x250.pub_300x250m.pub_728x90.text-
 ! https://github.com/AdguardTeam/AdguardFilters/issues/199124
 ||pvpoke-re.com/*.js?v=$script,replace=/&&([0-9A-Za-z]{8\,12})\(\);?\}function \1\(\)\{const _0x[\S\s]+?\1\(\);?\}\}let /&&\$1()}function \$1(){}let /
 ||pvpoke-re.com/*.js?v=$script,replace=/(\]=[0-9A-Za-z]{8\,12};function [0-9A-Za-z]{8\,12}\(\)\{)const _0x[0-9a-f]+=\{[\S\s]+?\);?\}\}const/\$1}const/
-pvpoke-re.com#%#//scriptlet('abort-on-property-read', 'HTMLElement.prototype.textContent')
+pvpoke-re.com#%#//scriptlet('trusted-suppress-native-method', 'Document.prototype.getElementsByTagName', '"h1"', 'prevent')
+pvpoke-re.com#%#//scriptlet('trusted-suppress-native-method', 'Document.prototype.getElementsByTagName', '"h2"', 'prevent')
+pvpoke-re.com#%#//scriptlet('trusted-suppress-native-method', 'Document.prototype.getElementsByTagName', '"p"', 'prevent')
 pvpoke-re.com#%#//scriptlet('set-constant', 'scrollTo', 'noopFunc')
 pvpoke-re.com#%#//scriptlet('abort-on-stack-trace', 'Array.from', '/\s+[0-9A-Za-z]{3}\d[0-9A-Za-z]{4,8}\W.+[0-9A-Za-z]{3}\d[0-9A-Za-z]{4,8}\.js\?v=|_tick/')
 pvpoke-re.com#%#//scriptlet('prevent-addEventListener', '/keydown|scroll|touchmove|touchstart|wheel/', 'function(_0x')
 pvpoke-re.com#$#.main-wrap[style*="opacity"] { opacity: 1 !important; }
-!pvpoke-re.com#$#body [style*="z-index"] { background: none !important; z-index: -2147483647 !important; }
+pvpoke-re.com#$#body [style*="fixed"] p[style*="font-size"] { font-size: 0 !important; }
 pvpoke-re.com#$#body [style*="fixed"] { background: none !important; z-index: -2147483647 !important; }
 pvpoke-re.com#%#//scriptlet('remove-attr', 'style', 'html,body')
 pvpoke-re.com#$#html { overflow-y: auto !important; }
@@ -105171,6 +105177,7 @@ browsershots.org#@#.advert_area
 ||42d9c0e6fb.com^
 ||42jdbcb.de^
 ||433bcaa83b.com^
+||439f4b8c75.com^
 ||43e1628a5f.com^
 ||43ors1osh.com^
 ||43sjmq3hg.com^
@@ -109440,6 +109447,7 @@ browsershots.org#@#.advert_area
 ||cajoutigger.top^
 ||cajwgkgbuccs.xyz^
 ||cakangautchus.net^
+||cakesinventory.com^
 ||cakgsijbt.xyz^
 ||caktahab.com^
 ||cakvwonirrw.com^
@@ -109938,6 +109946,7 @@ browsershots.org#@#.advert_area
 ||cheesyreinsplanets.com^
 ||cheetieaha.com^
 ||chefishoani.com^
+||chekeunpaint.shop^
 ||chekrilsoumpoab.net^
 ||cheksoam.com^
 ||chelonebarpost.com^
@@ -111440,6 +111449,7 @@ browsershots.org#@#.advert_area
 ||dbvpikc.com^
 ||dbwmzcj-r.click^
 ||dbycathyhoughs.com^
+||dbyherslenderwai.com^
 ||dc-rotator.com^
 ||dcff90fa75.com^
 ||dcfnihzg81pa.com^
@@ -111982,6 +111992,7 @@ browsershots.org#@#.advert_area
 ||disowp.info^
 ||disparitydegenerateconstrict.com^
 ||dispatchfeed.com^
+||dispatchgoldcarefully.com^
 ||dispensedessertbody.com^
 ||dispersecottage.com^
 ||displaceprivacydemocratic.com^
@@ -113032,6 +113043,7 @@ browsershots.org#@#.advert_area
 ||enoughturtlecontrol.com^
 ||enquirysavagely.com^
 ||enrageeyesnoop.com^
+||enraptureforemostearly.com^
 ||enraptureshut.com^
 ||enrichyummy.com^
 ||enrivetatie.com^
@@ -113136,6 +113148,7 @@ browsershots.org#@#.advert_area
 ||eremployeesihighl.com^
 ||erepsinslavian.shop^
 ||eresultedinncre.info^
+||ereyoumate.org^
 ||ergadx.com^
 ||ergjohl.com^
 ||ergonomicparadeupstroke.com^
@@ -116143,6 +116156,7 @@ browsershots.org#@#.advert_area
 ||hjxajf.com^
 ||hkaphqknkao.com^
 ||hkilops.com^
+||hkjfukkhwfepo.club^
 ||hksnu.com^
 ||hkyfuroxm.com^
 ||hkzhongzhuangzhan.cc^
@@ -117802,6 +117816,7 @@ browsershots.org#@#.advert_area
 ||k55p9ka2.de^
 ||k5zoom.com^
 ||k68tkg.com^
+||kaakfwbhq.com^
 ||kaarheciqa.xyz^
 ||kaascypher.com^
 ||kabakamarbles.top^
@@ -120347,6 +120362,7 @@ browsershots.org#@#.advert_area
 ||munpracticalwh.info^
 ||munqb.xyz^
 ||mupattbpoj.com^
+||mupocndf.com^
 ||muragetunnel.com^
 ||murallyhuashi.casa^
 ||murderassuredness.com^
@@ -120889,6 +120905,7 @@ browsershots.org#@#.advert_area
 ||nlhsfsgtye.com^
 ||nlkli.com^
 ||nlztpmhcxyzwh.vip^
+||nmajjhzqyckro.icu^
 ||nmanateex.top^
 ||nmcdn.us^
 ||nmevhudzi.com^
@@ -122550,6 +122567,7 @@ browsershots.org#@#.advert_area
 ||pasxfixs.com^
 ||patakaendymal.top^
 ||patalogs.com^
+||patcans.club^
 ||patchedcyamoid.com^
 ||patchouptid.xyz^
 ||patefysouari.com^
@@ -124258,6 +124276,7 @@ browsershots.org#@#.advert_area
 ||qmahepzo.one^
 ||qmaoqbvpuo.com^
 ||qmgpfrwyhtwp.com^
+||qmixnhyxc.com^
 ||qmkackqmigezu.club^
 ||qmlrmarmalrbb.top^
 ||qmpolidwfefrxem.com^
@@ -128781,6 +128800,7 @@ browsershots.org#@#.advert_area
 ||transmission423.fun^
 ||transportationdealer.com^
 ||trantpopshop.top^
+||trapdoortissuepush.com^
 ||trashdisguisedextension.com^
 ||trasre.com^
 ||trasupr.com^
