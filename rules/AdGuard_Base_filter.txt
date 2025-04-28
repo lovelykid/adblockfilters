@@ -22572,7 +22572,7 @@ youporn.com$$script:contains(/window\.[\s\S]*?_zone_[\s\S]*?{"zone_id":/)
 !
 ! NOTE: Regular rules
 !
-! https://github.com/AdguardTeam/AdguardFilters/issues/204119
+! https://github.com/AdguardTeam/AdguardFilters/issues/204127
 japangaysex.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=japangaysex.com
@@ -58438,7 +58438,6 @@ gelbooru.com##.mainBodyPadding > div[style*="height:"]
 thebypasser.com###logic > div.buttons > :not([id="submit_btn"])
 lyrical-nonsense.com##.playblockcnt
 ||securepubads.g.doubleclick.net/pagead/ppub_config$xmlhttprequest,redirect=noopjs,important,domain=independent.co.uk
-||c.amazon-adsystem.com/aax2/apstag.js$script,redirect=amazon-apstag,important,domain=independent.co.uk
 whatcar.com##div[class^="LandingPageSidebarLeftTemplate_masterHead__"]
 whatcar.com##a[class^="SponsoredSection_"]
 whatcar.com##div[advert-ref]
@@ -73651,6 +73650,9 @@ zavalise.com,wooflix.tv,yassflix.net,swipebreed.net,eurekaddl.lat,pepperlivestre
 reliabletv.me,anime4i.vip,vipleague.*,swipebreed.net,eurekaddl.lat,sanet.st,totalsportek.club,totalsportek.games,totalsportek.futbol,totalsportek.zip,totalsportek.racing,totalsportek.tel,totalsportek.dad,time4tv.site,buffsports.*,olympicstreams.*#%#//scriptlet('abort-current-inline-script', 'globalThis', 'adserverDomain')
 vidlink.pro,knaben.xyz,powstream.*,rojadirectaenvivo.pl,ext.to,capo4play.com,1337x.to,zone-telechargement.*,kickassanime.mx,redecanais.in,freckledine.net,buffstreams.app,sanet.lc,1stream.eu,compensationcoincide.net,embedstreams.me,closedjelly.net,sportsonline.*#%#//scriptlet('abort-on-stack-trace', 'Element.prototype.hasAttribute', 'isActionAllowedOnElement')
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/154277
+!+ NOT_PLATFORM(ext_ublock)
+||c.amazon-adsystem.com/aax2/apstag.js$script,redirect=amazon-apstag,important,domain=independent.co.uk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/198311
 ! https://github.com/AdguardTeam/AdguardFilters/issues/198021
 ! https://github.com/AdguardTeam/AdguardFilters/issues/188920
@@ -103590,6 +103592,7 @@ _800x80_
 ##.wrapper_ad
 ##.wrapper_advertisement
 ##.wrapperad
+##.wt-cli-cookie-bar-container
 ##.ww_ads_banner_wrapper
 ##.xeiro-ads
 ##.xmlad
@@ -141275,6 +141278,7 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||mail-ads.google.com^
 ||mail.aol.com/d/gemini_api/?adCount=
 ||majorgeeks.com/mg/slide/mg-slide.js
+||mallorca.com/user/data/advertisements/
 ||manga1000.top/hjshds.js
 ||manga1001.top/gdh/dd.js
 ||manga18.me/usd2023/usd_frontend.js
@@ -144487,7 +144491,7 @@ moneycontrol.com##.advSlotsGrayBox
 imagetotext.info##.adv_text
 operawire.com##.advads-post_ads
 moneycontrol.com##.advbannerWrap
-barkinganddagenhampost.co.uk,becclesandbungayjournal.co.uk,blogto.com,burymercury.co.uk,cambstimes.co.uk,cardealermagazine.co.uk,crimemagazine.com,dailyedge.ie,datalounge.com,derehamtimes.co.uk,dermnetnz.org,developingtelecoms.com,dissmercury.co.uk,dunmowbroadcast.co.uk,eadt.co.uk,eastlondonadvertiser.co.uk,economist.com,edp24.co.uk,elystandard.co.uk,etf.com,eveningnews24.co.uk,exmouthjournal.co.uk,fakenhamtimes.co.uk,football.co.uk,gearspace.com,gematsu.com,gobankingrates.com,greatyarmouthmercury.co.uk,hackneygazette.co.uk,hamhigh.co.uk,hertsad.co.uk,huntspost.co.uk,icaew.com,ilfordrecorder.co.uk,iol.co.za,ipswichstar.co.uk,islingtongazette.co.uk,lgr.co.uk,lowestoftjournal.co.uk,maltapark.com,midweekherald.co.uk,morningstar.co.uk,newhamrecorder.co.uk,newstalkzb.co.nz,northnorfolknews.co.uk,northsomersettimes.co.uk,pinkun.com,podtail.com,proxcskiing.com,romfordrecorder.co.uk,royston-crow.co.uk,saffronwaldenreporter.co.uk,sidmouthherald.co.uk,stowmarketmercury.co.uk,stylecraze.com,sudburymercury.co.uk,tbivision.com,the42.ie,thecomet.net,thedrum.com,thejournal.ie,tineye.com,trucksplanet.com,varsity.co.uk,videogameschronicle.com,wattonandswaffhamtimes.co.uk,wccftech.com,whtimes.co.uk,wisbechstandard.co.uk,wtatennis.com,wymondhamandattleboroughmercury.co.uk##.advert
+barkinganddagenhampost.co.uk,becclesandbungayjournal.co.uk,blogto.com,burymercury.co.uk,cambstimes.co.uk,cardealermagazine.co.uk,crimemagazine.com,dailyedge.ie,datalounge.com,derehamtimes.co.uk,dermnetnz.org,developingtelecoms.com,dissmercury.co.uk,dunmowbroadcast.co.uk,eadt.co.uk,eastlondonadvertiser.co.uk,economist.com,edp24.co.uk,elystandard.co.uk,etf.com,eveningnews24.co.uk,exmouthjournal.co.uk,fakenhamtimes.co.uk,football.co.uk,gearspace.com,gematsu.com,gobankingrates.com,greatyarmouthmercury.co.uk,hackneygazette.co.uk,hamhigh.co.uk,hertsad.co.uk,huntspost.co.uk,icaew.com,ilfordrecorder.co.uk,iol.co.za,ipswichstar.co.uk,islingtongazette.co.uk,lgr.co.uk,lowestoftjournal.co.uk,maltapark.com,midweekherald.co.uk,morningstar.co.uk,newhamrecorder.co.uk,newstalkzb.co.nz,northnorfolknews.co.uk,northsomersettimes.co.uk,pinkun.com,podtail.com,proxcskiing.com,romfordrecorder.co.uk,royston-crow.co.uk,saffronwaldenreporter.co.uk,sidmouthherald.co.uk,stowmarketmercury.co.uk,stylecraze.com,sudburymercury.co.uk,tbivision.com,the42.ie,thecomet.net,thedrum.com,thejournal.ie,thinkspain.com,tineye.com,trucksplanet.com,varsity.co.uk,videogameschronicle.com,wattonandswaffhamtimes.co.uk,wccftech.com,whtimes.co.uk,wisbechstandard.co.uk,wtatennis.com,wymondhamandattleboroughmercury.co.uk##.advert
 saucemagazine.com##.advert-elem
 saucemagazine.com##.advert-elem-1
 gozofinder.com##.advert-iframe
@@ -144785,6 +144789,7 @@ arras.io##.bannerHolder
 alternativeto.net##.bannerLink
 securenetsystems.net##.bannerPrerollArea
 mumbrella.com.au##.bannerSide
+ivote.co.za##.bannerSm
 thejc.com##.banner__
 thejc.com##.banner__article
 financemagnates.com##.banner__outer-wrapper
@@ -148593,6 +148598,7 @@ alibaba.com##a[campaignid][target="_blank"]
 bernama.com##a[class^="banner_photo_"]
 probuilds.net##a[class^="dl-blitz-"]
 trakt.tv##a[class^="hu-ck-s-t-er-"][target="_blank"]
+mallorca.com##a[data-ad]
 iconfinder.com##a[data-tracking^="iStock"]
 sashares.co.za##a[data-wpel-link="external"]
 pinterest.at,pinterest.ca,pinterest.ch,pinterest.co.uk,pinterest.com,pinterest.com.au,pinterest.com.mx,pinterest.de,pinterest.es,pinterest.fr,pinterest.it,pinterest.pt##a[href*="&epik="]

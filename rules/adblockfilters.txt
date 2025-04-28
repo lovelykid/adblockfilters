@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250428001231
-! Last modified: 2025/04/28 00:12:31
-! Blocked Filters: 98053
+! Version: 20250428085513
+! Last modified: 2025/04/28 08:55:13
+! Blocked Filters: 98064
 !
 ###AC_ad
 ###AD_160
@@ -14483,6 +14483,7 @@
 ##.wrapper_ad
 ##.wrapper_advertisement
 ##.wrapperad
+##.wt-cli-cookie-bar-container
 ##.wumii-bottom-popup
 ##.wumii-widget-ad
 ##.ww_ads_banner_wrapper
@@ -19974,6 +19975,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /hndxweb/push$popup,third-party
 /hnpprivacy-min.js
 /hockeystack.min.js
+/home-insight/ad_placements$xmlhttprequest
+/home-insight/initial_analytics$xmlhttprequest
 /homeCounter.php
 /homead/*_appledaily_bg.
 /honeybadger.js
@@ -39960,7 +39963,7 @@ bar-planb.com###player_dev
 barandbench.com##.ad-slot-row-m__ad-Wrapper__cusCS
 barandbench.com##.ad-wrapper-module__adContainer__iD4aI
 barelist.com,spankingtube.com##a[onclick]
-barkinganddagenhampost.co.uk,becclesandbungayjournal.co.uk,blogto.com,burymercury.co.uk,cambstimes.co.uk,cardealermagazine.co.uk,crimemagazine.com,dailyedge.ie,datalounge.com,derehamtimes.co.uk,dermnetnz.org,developingtelecoms.com,dissmercury.co.uk,dunmowbroadcast.co.uk,eadt.co.uk,eastlondonadvertiser.co.uk,economist.com,edp24.co.uk,elystandard.co.uk,etf.com,eveningnews24.co.uk,exmouthjournal.co.uk,fakenhamtimes.co.uk,football.co.uk,gearspace.com,gematsu.com,gobankingrates.com,greatyarmouthmercury.co.uk,hackneygazette.co.uk,hamhigh.co.uk,hertsad.co.uk,huntspost.co.uk,icaew.com,ilfordrecorder.co.uk,iol.co.za,ipswichstar.co.uk,islingtongazette.co.uk,lgr.co.uk,lowestoftjournal.co.uk,maltapark.com,midweekherald.co.uk,morningstar.co.uk,newhamrecorder.co.uk,newstalkzb.co.nz,northnorfolknews.co.uk,northsomersettimes.co.uk,pinkun.com,podtail.com,proxcskiing.com,romfordrecorder.co.uk,royston-crow.co.uk,saffronwaldenreporter.co.uk,sidmouthherald.co.uk,stowmarketmercury.co.uk,stylecraze.com,sudburymercury.co.uk,tbivision.com,the42.ie,thecomet.net,thedrum.com,thejournal.ie,tineye.com,trucksplanet.com,varsity.co.uk,videogameschronicle.com,wattonandswaffhamtimes.co.uk,wccftech.com,whtimes.co.uk,wisbechstandard.co.uk,wtatennis.com,wymondhamandattleboroughmercury.co.uk##.advert
+barkinganddagenhampost.co.uk,becclesandbungayjournal.co.uk,blogto.com,burymercury.co.uk,cambstimes.co.uk,cardealermagazine.co.uk,crimemagazine.com,dailyedge.ie,datalounge.com,derehamtimes.co.uk,dermnetnz.org,developingtelecoms.com,dissmercury.co.uk,dunmowbroadcast.co.uk,eadt.co.uk,eastlondonadvertiser.co.uk,economist.com,edp24.co.uk,elystandard.co.uk,etf.com,eveningnews24.co.uk,exmouthjournal.co.uk,fakenhamtimes.co.uk,football.co.uk,gearspace.com,gematsu.com,gobankingrates.com,greatyarmouthmercury.co.uk,hackneygazette.co.uk,hamhigh.co.uk,hertsad.co.uk,huntspost.co.uk,icaew.com,ilfordrecorder.co.uk,iol.co.za,ipswichstar.co.uk,islingtongazette.co.uk,lgr.co.uk,lowestoftjournal.co.uk,maltapark.com,midweekherald.co.uk,morningstar.co.uk,newhamrecorder.co.uk,newstalkzb.co.nz,northnorfolknews.co.uk,northsomersettimes.co.uk,pinkun.com,podtail.com,proxcskiing.com,romfordrecorder.co.uk,royston-crow.co.uk,saffronwaldenreporter.co.uk,sidmouthherald.co.uk,stowmarketmercury.co.uk,stylecraze.com,sudburymercury.co.uk,tbivision.com,the42.ie,thecomet.net,thedrum.com,thejournal.ie,thinkspain.com,tineye.com,trucksplanet.com,varsity.co.uk,videogameschronicle.com,wattonandswaffhamtimes.co.uk,wccftech.com,whtimes.co.uk,wisbechstandard.co.uk,wtatennis.com,wymondhamandattleboroughmercury.co.uk##.advert
 barlinek24.pl#?#.item-page > div:not([class]) > table[align="center"]:has(> tbody > tr > td > p:contains(/^REKLAMA$/))
 barnstormers.com##.banner_holder
 barnstormers.com##.banner_mid
@@ -56173,6 +56176,7 @@ ivg.it#%#//scriptlet("set-constant", "checkForAdBlocker", "noopFunc")
 iview.abc.net.au/programs$replace=/("type"\:"preroll")[\s\S]*("type")/"type"/
 iview.abc.net.au/programs$replace=/("type"\:"preroll")[\s\S]*("type")/"type"/,important
 iviewui.com##.ivu-alert
+ivote.co.za##.bannerSm
 iwantgalleries.com##.bant
 iwara.tv##.contentBlock__content
 iwara.tv##.contentBlock__content iframe
@@ -59782,6 +59786,7 @@ malaysiastock.biz###sideBar > div[class^="RightPanel_Rectangle"]
 malaysiastock.biz#%#//scriptlet("set-constant", "canRunAds", "true")
 malimali5.com##a[href^="https://www.odancool.com/"]
 malimali5.com#?#.container > .section:has(> a[href^="https://www.odancool.com/"])
+mallorca.com##a[data-ad]
 maltadaily.mt##div[id^="malta-"]
 malwarefox.com##.entry-content > .gb-container
 malwaretips.com###block-10
@@ -84535,6 +84540,8 @@ zzzyk.com###Tinfo
 ||btmulu.com/assets/*/ad02.gif
 ||btpian.com/static/*960.js
 ||btpian.com/static/wenquan.js
+||btravel.com/analytics/
+||btravel.com/falcon/api/hits/
 ||btsow.click/app/*/View/img/b72890.jpg
 ||btsow.motorcycles/app/jav$image
 ||bttt11.com/ad.
@@ -86779,6 +86786,7 @@ zzzyk.com###Tinfo
 ||everyonepiano.cn/Public/*0x
 ||everythingrf.com/wsFEGlobal.asmx/GetStaticImages
 ||everythingrf.com/wsFEGlobal.asmx/GetWallpaper
+||everywatch.com/ingest/
 ||eviesays.com/js/analytics/
 ||evosrv.com/html/videojs/plugins/videojs-contrib-ads.js$script,redirect=noopjs,domain=evoload.io
 ||evri.com/analytics/
@@ -87574,6 +87582,7 @@ zzzyk.com###Tinfo
 ||gateway.bridged.media/Engagement/View
 ||gateway.bridged.media/Logging/
 ||gateway.dev/log
+||gateway.melia.com/tracking
 ||gavbus*.com/assets/common/js/ad.js
 ||gavbus*.com/assets/common/js/admenu.js
 ||gay.bingo/agent.php
@@ -90645,6 +90654,7 @@ zzzyk.com###Tinfo
 ||malimali5.com/ad1.png
 ||mall.video.qq.com/m/activity/h5/$subdocument
 ||mall.xinkuaituan.com/zhuanti/
+||mallorca.com/user/data/advertisements/
 ||mallur.net^$popup
 ||mamecn.com/style/pcjs/bgimg.
 ||mamibuy.com.tw/Ad/Period.aspx
@@ -92978,6 +92988,7 @@ zzzyk.com###Tinfo
 ||pupudy.com/images/wxrj.gif
 ||purevpn.com/affiliates/
 ||purexbox.com/javascript/gn/prebid-
+||purpledotprice.com/api/v1/track
 ||purposegames.com/api/*/adblock?token=
 ||pururin.to/assets/js/pop.js
 ||push.bdnewsx.com/sahil.js
