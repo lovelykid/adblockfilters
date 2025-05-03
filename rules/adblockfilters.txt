@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250503161334
-! Last modified: 2025/05/03 16:13:34
-! Blocked Filters: 98262
+! Version: 20250504001230
+! Last modified: 2025/05/04 00:12:30
+! Blocked Filters: 98287
 !
 ###AC_ad
 ###AD_160
@@ -14876,6 +14876,7 @@
 ##[onclick*="content.ad/"]
 ##[onclick*="trackEvent', 'ad"]
 ##[onclick*='fjbglfrv.com']
+##[onclick*='https://i.opiwb.com:']
 ##[onclick*='m.kanshuapp.net']
 ##[onclick*='pypyj.com']
 ##[onclick*='www.l4lui.com'],.col-12.position-relative>b
@@ -18659,6 +18660,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /api/users?token=$subdocument,third-party
 /api/v1/EndpointTracker
 /api/v1/activity|$~third-party,xmlhttprequest
+/api/v1/firehose/batch
 /api/v1/firehose?_
 /api/v1/metrics
 /api/v1/reportData/*
@@ -26707,7 +26709,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||asset*.coupangcdn.com^$stealth=referrer,domain=coupang.com
 @@||assets*.akamai.coub.com/assets/
 @@||assets-jpcust.jwpsrv.com^$domain=destructoid.com
-@@||assets.adobedtm.com/extensions/*/AppMeasurement.min.js$domain=nbc.com|subwy.com|tatamotors.com|usanetwork.com
+@@||assets.adobedtm.com/extensions/*/AppMeasurement.min.js$domain=identity.healthsafe-id.com|nbc.com|subwy.com|tatamotors.com|usanetwork.com
 @@||assets.adobedtm.com^$domain=wired.com
 @@||assets.anyclip.com^$domain=content.dictionary.com
 @@||assets.beinsports.com/*/scripts/ads.js$~third-party
@@ -39168,7 +39170,7 @@ audi-sport.net##div[data-widget-key="Snack_Side_Menu_2"]
 audi-sport.net##div[data-widget-key="forum_home_sidebar_top_ads"]
 audi-sport.net##div[data-widget-key="right_top_ad"]
 audi-sport.net##div[data-widget-key="sellwild_sidebar_bottom"]
-audi-sport.net,beermoneyforum.com,clubsearay.com,forums.sailinganarchy.com,geekdoing.com,skitalk.com,sportfishingbc.com,studentdoctor.net##.samBannerUnit
+audi-sport.net,beermoneyforum.com,birdforum.net,clubsearay.com,forums.sailinganarchy.com,geekdoing.com,skitalk.com,sportfishingbc.com,studentdoctor.net##.samBannerUnit
 audi-sport.net,emtbforums.com,forums.bluemoon-mcfc.co.uk,overtake.gg,racedepartment.com,resetera.com,satelliteguys.us##.samCodeUnit
 audiencepool.com###interstetial-container
 audio.com.pl##body > .hp-wide-top
@@ -43679,8 +43681,10 @@ coincodex.com#$##CCx3StickyTop { display: none !important; }
 coincodex.com#$#.CCx3StickyTop { margin-top: 0 !important; }
 coindesk.com##.article-com-wrapper
 coindesk.com##.high-impact-ad
+coindesk.com##[data-module-name="high-impact"]
 coindesk.com##div[class^="high-impact-vertstyles__StyledWrapper-"]
 coindesk.com##div[data-module-name="high-impact"]
+coindesk.com#?#.bg-white.flex.gap-6.w-full.shrink.justify-between.md\:justify-normal.lg\:flex-row-reverse:has(.font-metadata.mr-1.uppercase:-abp-contains(Sponsored by))
 coindesk.com,planetfootball.com,se7ensins.com,theboobsblog.com##div[style="height: 250px;"]
 coindoo.com##.banner-tb-wrapper
 coindoo.com##.pub
@@ -43721,6 +43725,7 @@ coinlisting.info###carousel-example-generic
 coinlisting.info#?#.panel:-abp-has(h3:-abp-contains(Sponsored Ad))
 coinmarketcal.com##.banner_medium
 coinmarketcap.com###header-banner-wrapper
+coinmarketcap.com##.coin-ad-banner
 coinmarketcap.com##.coin-video
 coinmarketcap.com##.goXFFk
 coinmarketcap.com##.sponsoredMark
@@ -47822,7 +47827,9 @@ etherscan.com,etherscan.io##.container-xxl > .row > div[style^="min-height:"][cl
 etherscan.io##.auto-results-wrapper > div.p-2
 etherscan.io##.container-xxl > div.align-items-center > div.col-md-9 + div.col-auto
 etherscan.io##.container-xxl:has(> div[class^="py-"] > div > span#ContentPlaceHolder1_lblAdResult)
+etherscan.io##.text-white.text-opacity-75.noindex-section.mb-0:has([style="text-decoration: none;"])
 etherscan.io##[data-t8xt5pt6kr-seq="0"]
+etherscan.io##div > a[target="_blank"][rel="nofollow"] > img[alt="Ads"]
 etherscan.io##div[id^="ContentPlaceHolder"][id*="_divMultichainAddress"] + .scrollbar-custom > .d-flex > .text-center > ins
 etherscan.io##form[action="/search"] + p.text-white
 etherscan.io##p[style="min-height:22px"]
@@ -48085,6 +48092,7 @@ exoticca.com##div[id^="add-banner"]
 expat.com##.ad-inside-list
 expat.com##.pub-970
 expats.cz##.eas
+experte.com##overlay-block
 experts-exchange.com###topHeaderBannerWrap
 experts-exchange.com##.vendorpromotion
 explorecams.com##.item-row
@@ -48279,6 +48287,7 @@ facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#//
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#?#div[data-testid="marketplace_pdp_component"] div[style^="max-height:"] div[style^="max-height:"] > div[class] > div > div:not([class]):has(> div[class] > div[class] > a[href^="/ads/"])
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#?#div[role="complementary"] > div[class] > div[class] > div[class] span > div > div:not([aria-label]):not([data-visualcompletion]):has(> div[class] > div[class] div[class] > a[href^="https://l."][href*="facebook.com/l.php?u="][target="_blank"])
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#@#a[href^="/ads/"]
+faceitanalyser.com##a[href^="https://t.csgofast.cash/"]
 faceitstats.com###app > div[style*="margin-top"] > div[style*="height: 250px"]
 faceitstats.com#?##app > div[style] > div[style]:has(> div.vm-placement)
 faceitstats.com#?#tbody > tr:has(> td > div[style] > div#vm-av)
@@ -52480,6 +52489,7 @@ gunafrica.co.za##.banners-box
 gunafrica.co.za##.header-banner-cont
 gunaz.az##div[class^="aads"] > object
 gunbroker.com###home-ad-a-wrapper
+gunbroker.com##div[id^="adPlacement"]
 gunsamerica.com###slidebox
 gunsamerica.com##.cl_ga
 gunsandammo.com###VideoPlayerDivIframe
@@ -65019,6 +65029,7 @@ otomi-games.com##.otomi-widget
 otomi-games.com##[href^="https://t.trcktr.com/"]
 otomi-games.com#$?#.clean-grid-grid-post:has(> [id^="otomi-"] + .clean-grid-grid-post-details-full) { remove: true; }
 otomi-games.com,ryuugames.com##[href^="https://aichattings.com/"]
+otomi-games.com,ryuugames.com##[href^="https://golove.ai/"]
 otomoto.pl##.slot-placeholder
 otomoto.pl##a[href][data-testid="banner-link"]
 otomoto.pl##article[data-testid="carsmile-listing-ad"]
@@ -73273,6 +73284,8 @@ taiwandaily.net##.gofollow[data-track] > img
 taiwanlibrarysearch.herokuapp.com#%#//scriptlet('prevent-fetch', 'www3.doubleclick.net')
 taiwanus.net##td[width="900"] + td[width="320"]
 taiwebs.com##.resourceList > .bn40
+taiyangnews.info##.widget-module__widgetWrapper__Rzg0s
+taiyangnews.info##a[href^="javascript:clickTrach('"]
 taizhou.com.cn##.duilian
 taizhou.com.cn##.duilian2
 tajemnice-swiata.pl##.mh-sidebar > div[id^="custom_html-"]
@@ -84377,6 +84390,7 @@ zzzyk.com###Tinfo
 ||biqiuge8.cc/js/d
 ||biqiuge8.cc/js/p
 ||biquge96.com/123.
+||birdforum.net/data/siropu/
 ||birdsend.co/assets/static/js/pixel/
 ||birdsend.email/pixel
 ||birdsend.net/pixel
@@ -85631,6 +85645,7 @@ zzzyk.com###Tinfo
 ||coingolive.com/assets/img/partners/
 ||coinmama.com/assets/img/banners/
 ||coinmarketcal.com/images/clients/asset/bitcasino/
+||coinmarketcap.com/static/img/cdp_ad_banner/
 ||cointelegraph.com/pixel?
 ||coinvote.cc/user_data/premium_banners/
 ||coinwebmining.com^$third-party
@@ -86520,6 +86535,7 @@ zzzyk.com###Tinfo
 ||dropapk.com/download.gif
 ||dropbox.com/2/client_metrics
 ||dropbox.com/2/pap_event_logging
+||dropbox.com/2/udcl/log_timing
 ||dropbox.com/alternate_
 ||dropbox.com/jse
 ||dropbox.com/log/
@@ -86992,6 +87008,7 @@ zzzyk.com###Tinfo
 ||expedia.com/vaclog/
 ||experiences.wyng.com/api/*/event-api/events
 ||expert.nl/daix.js
+||experte.com/t/events
 ||exporntoons.net/api/stats?
 ||expressen.se*/video$replace=/"adsDisabled":false/"adsDisabled":true/
 ||expressen.se*/video$replace=/"adsDisabled":false/"adsDisabled":true/,important
@@ -91445,6 +91462,7 @@ zzzyk.com###Tinfo
 ||mrdhan.com/asset/*.min.js?*=*&
 ||mrf.io/statics/marfeel-sdk.js
 ||mrf.io/statics/marfeel/chunks/metrics-
+||mrkhub.com/sks/js/sks_track.js
 ||mrskin.com/?_$popup
 ||mrskin.com/affiliateframe/
 ||mrskin.com/scripts/$third-party
@@ -92482,6 +92500,11 @@ zzzyk.com###Tinfo
 ||pcwdld.com/SGNg95BS08r9.js
 ||pcworld.com/www/js/messaging.js
 ||pdfbook.cn/wp-content/uploads/2017/11/049.jpg
+||pdffiller.com/api_v3/experiment/
+||pdffiller.com/api_v3/uploader/stats
+||pdffiller.com/click-stream/
+||pdffiller.com/funnel.php?
+||pdffiller.com/mpages/track/
 ||pdst.fm^$script,third-party
 ||peachurnet.com/templates/banner-*x*-*.png
 ||peachurnet.com/templates/stake.com-banner-size-*-min.jpg
@@ -93975,6 +93998,7 @@ zzzyk.com###Tinfo
 ||satroki.tech/api/JdUnion
 ||save-editor.com/b/in/ad/
 ||savecart.pl/d/
+||savefiles.com^$domain=hentaidays.com
 ||savefrom.net/build/js/chunk~popup
 ||saveit.us/img/$third-party
 ||savemp4.red/live_stream_bn.php
@@ -96017,6 +96041,7 @@ zzzyk.com###Tinfo
 ||travel.co.jp/js/analysis.js
 ||travel.co.jp/tracking.asp
 ||travel.mediaalpha.com/js/serve.js
+||traveloka.com/api/v1/tvlk/events
 ||travelpayouts.com/widgets/$domain=news.milli.az
 ||travelweekly.co.uk/AfoCampaign/
 ||travian.dk/?uc=$third-party
