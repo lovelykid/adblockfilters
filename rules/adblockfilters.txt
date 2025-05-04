@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250504001230
-! Last modified: 2025/05/04 00:12:30
-! Blocked Filters: 98287
+! Version: 20250504085908
+! Last modified: 2025/05/04 08:59:08
+! Blocked Filters: 98294
 !
 ###AC_ad
 ###AD_160
@@ -22145,6 +22145,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /track/cm?
 /track/component/*
 /track/event/*
+/track/go.php?*&referer_url=
 /track/hit.gif
 /track/identity?
 /track/imp?
@@ -26096,7 +26097,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||adst.mp.pl^$domain=mp.pl
 @@||adsterra.com/images/*.png$image,domain=unlockapk.com
 @@||adswizz.com/adswizz/js/SynchroClient*.js$script,third-party,domain=jjazz.net
-@@||adswizz.com/sca_newenco/$xmlhttprequest,domain=triplem.com.au
+@@||adswizz.com/sca_newenco/$domain=triplem.com.au
 @@||adswizz.com^$domain=noz.de
 @@||adtech.de/dt/common/DAC.js$domain=ekstrabladet.dk
 @@||adtech.de/dt/common/DAC.js$domain=mitti.se
@@ -26424,7 +26425,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||anitoonstv.com^$generichide
 @@||anitube.*^$generichide
 @@||anitube.vip/playerricas.php$stealth=referrer
-@@||aniview.com/api/$script,domain=gamingbible.co.uk|ladbible.com
+@@||aniview.com/api/$script,xmlhttprequest,domain=gamingbible.co.uk|ladbible.com|stirr.com
 @@||aniview.com/api/adserver/spt?$domain=sportbible.com
 @@||aniwatcher.com/adblock.js
 @@||anizmstream*.com/cdn/down/$stealth,domain=anizmplayer.com|anizm.net
@@ -37238,7 +37239,7 @@ adultdvdempire.com##a[href*="?partner_id="][href*="&utm_"]
 adultdvdtalk.com###top-elements > div[style^="float:right;"]
 adultdvdtalk.com##div[style^="position: fixed; margin"][style*="text-align: center;"]
 adultepic.com##div[style*="height: 250px;"]
-adultfilmdatabase.com,animeidhentai.com,babeforums.org,bos.so,camvideos.tv,camwhores.tv,coomer.su,devporn.net,f95zone.to,fritchy.com,gifsauce.com,hentai2read.com,hotpornfile.org,hpjav.com,imagebam.com,imgbox.com,imgtaxi.com,kemono.su,motherless.com,muchohentai.com,myporn.club,oncam.me,pandamovies.pw,planetsuzy.org,porntrex.com,pussyspace.com,sendvid.com,sexgalaxy.net,sextvx.com,sexuria.com,simpshub.com,thefappeningblog.com,vintage-erotica-forum.com,vipergirls.to,waxtube.com,xfantazy.com,yeapornpls.com##a[href*="theporndude.com"]
+adultfilmdatabase.com,animeidhentai.com,babeforums.org,bos.so,camvideos.tv,camwhores.tv,coomer.su,devporn.net,f95zone.to,familypornhd.com,fritchy.com,gifsauce.com,hentai2read.com,hotpornfile.org,hpjav.com,imagebam.com,imgbox.com,imgtaxi.com,kemono.su,motherless.com,muchohentai.com,myporn.club,oncam.me,pandamovies.pw,planetsuzy.org,porntrex.com,pussyspace.com,sendvid.com,sexgalaxy.net,sextvx.com,sexuria.com,simpshub.com,thefappeningblog.com,vintage-erotica-forum.com,vipergirls.to,waxtube.com,xfantazy.com,yeapornpls.com##a[href*="theporndude.com"]
 adultfilmindex.com##.aebn
 adultgamesportal.com##a[href^="http://www.crazyxxx3dworld.com/"]
 adultgamesportal.com##a[href^="https://t.frtyz.com/"]
@@ -49527,6 +49528,7 @@ forbes.com##.moreon-ad
 forbes.com##.multi-featured-products
 forbes.com##.ntv-loading
 forbes.com##.profile-sidebar__sticky-container
+forbes.com##.recirc-rail
 forbes.com##.recirc-right-rail
 forbes.com##.rtb-top-wrapper
 forbes.com##.table-ad
@@ -68323,6 +68325,8 @@ raabta.net###text-html-widget-3
 raagalahari.com##.off-canvas-content > .row > .columns > div[style="font-size:11px;line-height:15px;color:#CACACA"]:not([class]):not([id])
 rabbitsfun.com##.gallery-banner
 rabbitsfun.com##.picture-banner
+rabbitsreviews.com##[class^="_hero-banner-promo_"]
+rabbitsreviews.com##[class^="_notificationConsent_"]
 rabble.ca##.grey-cta-block
 racedepartment.com#%#//scriptlet("abort-current-inline-script", "$", "adsBlocked")
 racefans.net##.text-above-ad
@@ -68885,6 +68889,7 @@ redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youp
 redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(base64)
 redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(data:)
 redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(image/)
+redtube.com,tube8.com,youporn.com##a[class*="gtm-event-header-paidtabs"]
 redtube53.info##.entry-content.clearfix
 redtube53.info##img[width="300"][height="600"]
 redvido.com#%#//scriptlet('abort-current-inline-script', 'onload', '.style.display=')
@@ -69518,7 +69523,6 @@ rynekzdrowia.pl#?#.right > div[class^="box-"]:has(> small:contains(PARTNER))
 rynekzdrowia.pl#?#div[class^="box-"]:has(> div[class] > div[id^="ad"])
 ryuugames.com###block-34
 ryuugames.com###wpfront-notification-bar
-ryuugames.com##[href^="https://golove.ai/"]
 ryuugames.com##a[href^="https://hive.arf.dev"]
 ryuugames.com##a[href^="https://quickdrop.link"]
 ryuugames.com#$##wpsafe-link { display: block !important; }
@@ -89906,6 +89910,7 @@ zzzyk.com###Tinfo
 ||juapp5.com/geek_image/chaopai.jpeg
 ||jubsaugn.com^$popup
 ||juejin.cn/content_api/v1/advert/query_adverts?
+||juicer.io/api/page_views
 ||juicygif.com/cache/compiledtemplates/dd1f867fe40eae5c2d0aa0f485e5718e.js
 ||juji.tv/Runtime/js/
 ||julius.ai/monitoring
@@ -93478,6 +93483,7 @@ zzzyk.com###Tinfo
 ||r7.com/comscore/
 ||rabbitporno.com/friends/
 ||rabbitporno.com/iframes/
+||rabbitsreviews.com/banners/
 ||rabbitstream.net/ajax/*/banners
 ||rabota.by/analytics?
 ||rabota.by/stat?
@@ -95121,6 +95127,7 @@ zzzyk.com###Tinfo
 ||stileproject.com/vhtk/
 ||stinglackingrent.com^$popup
 ||stirr.com/api/ads/
+||stirr.com/api/stats
 ||stlog*-local.kakao.com^
 ||sto.cx/skin/a_autoSize*.js
 ||stockanalysis.com/cfa/
