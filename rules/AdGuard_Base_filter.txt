@@ -21728,6 +21728,10 @@ youporn.com$$script:contains(/window\.[\s\S]*?_zone_[\s\S]*?{"zone_id":/)
 !
 ! NOTE: Regular rules
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/204410#issuecomment-2855256390
+www.msn.com#%#//scriptlet('prevent-fetch', '/pagead2\.googlesyndication\.com/ method:HEAD mode:no-cors')
+!+ PLATFORM(ios, ext_android_cb, ext_safari)
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=www.msn.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204693
 ||bistream.xyz/js/loader.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204464
@@ -45161,6 +45165,7 @@ exsite.pl#%#window.ab = false;
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204488
 ||player.desenefaine.net/js/script_*.js
+player.desenefaine.net#%#//scriptlet("prevent-window-open")
 !
 emisiuni.live##a[target="_blank"] > img
 !
@@ -79173,6 +79178,8 @@ implbits.com#@#.banner_container
 !#########################################
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/204523
+@@||c.2ace.ru*/VOD/$stealth=referrer
 ! 9animetv.to - playback not working
 @@.m3u8$domain=rapid-cloud.co,xmlhttprequest,stealth=referrer
 @@seg-*.*$domain=rapid-cloud.co,xmlhttprequest,stealth=referrer
@@ -106365,6 +106372,7 @@ browsershots.org#@#.advert_area
 ||amusementrehearseevil.com^
 ||amusementstepfatherpretence.com^
 ||amusing-location.pro^
+||amusinghump.com^
 ||amvbwlerkvrqw.top^
 ||amvnaisn.com^
 ||amxntatujo.com^
@@ -107744,6 +107752,7 @@ browsershots.org#@#.advert_area
 ||belongedenemy.com^
 ||belovedsalesman.com^
 ||belovedset.com^
+||belowsavvied.shop^
 ||beltwaythrust.com^
 ||beludicolor.com^
 ||belwrite.com^
@@ -107987,6 +107996,7 @@ browsershots.org#@#.advert_area
 ||bihoxqpfiown.com^
 ||bihunekus.com^
 ||biirmjnw.icu^
+||bikckophkhmsl.com^
 ||bikrurda.net^
 ||bilateralgodmother.com^
 ||bilifeetcheets.com^
@@ -111428,6 +111438,7 @@ browsershots.org#@#.advert_area
 ||disbeliefenvelopemeow.com^
 ||disburymixy.shop^
 ||disccompose.com^
+||discernadornmentmaster.com^
 ||discernibletickpang.com^
 ||dischargemakerfringe.com^
 ||disciplecousinendorse.com^
@@ -112634,6 +112645,7 @@ browsershots.org#@#.advert_area
 ||epnredirect.ru^
 ||epochheelbiography.com^
 ||epointatoncean.com^
+||epointatonceandt.com^
 ||epreswsentativ.com^
 ||epsashoofil.net^
 ||epsuphoa.xyz^
@@ -115771,6 +115783,7 @@ browsershots.org#@#.advert_area
 ||hnmikeloarp.com^
 ||hnpiwmegpdv.com^
 ||hnrgmc.com^
+||hnygjirnnakja.one^
 ||hoa44trk.com^
 ||hoabauwezow.com^
 ||hoachalaide.net^
@@ -117663,6 +117676,7 @@ browsershots.org#@#.advert_area
 ||king3rsc7ol9e3ge.com^
 ||kingads.mobi^
 ||kingbole.com^
+||kingfainted.com^
 ||kingrecommendation.com^
 ||kingsfranzper.com^
 ||kingtrck1.com^
@@ -120505,6 +120519,7 @@ browsershots.org#@#.advert_area
 ||nfgxadlbfzuy.click^
 ||nfjdxtfpclfh.com^
 ||nfuwlooaodf.com^
+||nfvetkycvdkaw.life^
 ||nfyowjhcgb.com^
 ||ngcghsdvjfcpp.club^
 ||ngegas.files.im^
@@ -121115,6 +121130,7 @@ browsershots.org#@#.advert_area
 ||octopod.cc^
 ||octopuspop.com^
 ||octroinewings.shop^
+||octteqlxtjagek.com^
 ||ocuwyfarlvbq.com^
 ||ocvrulo.digital^
 ||ocxihhlqc.xyz^
@@ -130751,6 +130767,7 @@ browsershots.org#@#.advert_area
 ||wllebozbzjybk.top^
 ||wlrkcefll.com^
 ||wlvkzwqmyjkmw.top^
+||wlyikeacon.org^
 ||wlzzwzeevbwez.top^
 ||wma.io^
 ||wmadmht.com^
@@ -149990,6 +150007,7 @@ msn.com###displayAdCard
 msn.com###partners
 msn.com###promotions
 msn.com##.ad-banner-wrapper
+msn.com##.ad-container
 msn.com##.articlePage_bannerAd_wrapper-DS-EntryPoint1-1
 msn.com##.articlePage_eoabNativeAd_new-DS-EntryPoint1-1
 msn.com##.banner-placeholder-container
