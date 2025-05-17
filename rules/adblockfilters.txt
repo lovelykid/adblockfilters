@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250517001409
-! Last modified: 2025/05/17 00:14:09
-! Blocked Filters: 98689
+! Version: 20250517085346
+! Last modified: 2025/05/17 08:53:46
+! Blocked Filters: 98692
 !
 ###AC_ad
 ###AD_160
@@ -14864,6 +14864,7 @@
 ##[onclick*="content.ad/"]
 ##[onclick*="trackEvent', 'ad"]
 ##[onclick*='fjbglfrv.com']
+##[onclick*='https://i.opiwb.com:']
 ##[onclick*='m.kanshuapp.net']
 ##[onclick*='pypyj.com']
 ##[onclick*='www.l4lui.com'],.col-12.position-relative>b
@@ -33015,6 +33016,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=archivebate.live
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=ask4movie.mx
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=automap.it
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=autopareri.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=b2bhint.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=babymodz.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=bagi.co.in
@@ -34723,7 +34725,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||smtcaw.com^$generichide
 @@||sn.dplayer*.site/iframe.php$stealth=referrer
 @@||sna3talaflam.com^$generichide
-@@||snap.licdn.com/li.lms-analytics/insight.min.js$domain=msci.com
 @@||snbc13.com^$generichide
 @@||sneakernews.com^$generichide
 @@||snigelweb-com.videoplayerhub.com/videoloader.js$domain=notebookcheck-hu.com|notebookcheck.com|notebookcheck.net|notebookcheck.org|notebookcheck.biz|notebookcheck.it|notebookcheck.nl|notebookcheck.info|notebookcheck-tr.com|notebookcheck.se|notebookcheck-ru.com
@@ -34826,7 +34827,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||speedtestcustom.com^$subdocument,stealth=referrer
 @@||speedynews.xyz^$generichide
 @@||spiegel.de/layout/js/http/netmind-$script
-@@||spiegel.de^$generichide
 @@||spiele-umsonst.de^$generichide
 @@||spike.itv.com/itv/lserver/tserver/random=$xmlhttprequest
 @@||spinbot.com/js/adsbygoogle.js
@@ -39471,6 +39471,8 @@ autonet.az#$#header#header { height: auto!important; max-height: 400px!important
 autonews.com##.ad-entity-container
 autonews.com##.oas-ad
 autopapa.ge##.top-rek
+autopareri.com##.ipsWidget[data-blockerrormessage]:has(> .ipsWidget_inner:only-child > div[data-aa-adunit]:only-child)
+autopareri.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 autoplius.lt###banner_right
 autoplius.lt##.headtop
 autoplius.lt##.leader-board-wrapper
@@ -50462,9 +50464,8 @@ freewebcart.com#%#//scriptlet('prevent-setTimeout', 'placebo.height')
 freewebcart.com#@#.ad-wrap:not(#google_ads_iframe_checktag)
 freewsad.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 freex2line.online#$#a.downloadbtn { display: block !important; }
+freex2line.online#%#(()=>{document.addEventListener("DOMContentLoaded",(()=>{const t=document.querySelector(".InnerDownload a#downloadbtn"),e=document.querySelector('script[type="application/json"]');if(!t||!e?.textContent)return;let n;try{n=JSON.parse(e.textContent)}catch(t){return void console.error(t)}const o=Object.values(n).find((t=>"string"==typeof t&&t.startsWith("https://")&&t.includes("cimanow.cc")&&t.includes("/watching/")&&(t=>{try{return new URL(t),!0}catch{return!1}})(t)));o&&location.replace(o)}));})();
 freex2line.online#%#//scriptlet('adjust-setTimeout', '/btn|realURL|\.style.display|setAttribute|getElementById/', '*', '0.001')
-freex2line.online#%#//scriptlet('set-attr', '.InnerDownload > a#downloadbtn[href^="http"][href*="cimanow."][href*="?ad="][data-real-url^="https:/"]', 'href', '[data-real-url]')
-freex2line.online#%#//scriptlet('trusted-click-element', '.InnerDownload > a#downloadbtn[href^="http"][href*="cimanow."]:not([href*="?ad="])')
 freex2line.online#%#//scriptlet('trusted-replace-node-text', 'script', 'countdown', '/seconds : \d+/', 'seconds : 0')
 freex2line.online#%#//scriptlet('trusted-replace-node-text', 'script', 'performance.now', '>= delay', '>= -1')
 freex2line.online,cimanow.cc#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'MutationObserver')
@@ -50475,9 +50476,9 @@ freex2line.online,cimanow.cc,cimanow.*#@#.ad-slot
 freex2line.online,cimanowtv.com,cnvids.com,cimanow.cc,cimanow.*#%#//scriptlet('prevent-element-src-loading', 'script', 'securepubads.g.doubleclick.net/tag/js/gpt.js')
 freex2line.online,cimanowtv.com,cnvids.com,cimanow.cc,cimanow.*#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 freex2line.online,cimanowtv.com,cnvids.com,cimanow.cc,cimanow.*#%#//scriptlet('prevent-fetch', 'securepubads.g.doubleclick.net')
-freex2line.online,cimanowtv.com,cnvids.com,cimanow.cc,cimanow.*#%#//scriptlet('remove-node-text', 'script', '/\.__proto__\.constructor\.name|decompressFromUTF16|\)\.substr\(0|document\[_0x[\s\S]*?innerHTML|=Array\.prototype\.slice\.call\(arguments\)/')
-freex2line.online,cimanowtv.com,cnvids.com,cimanow.cc,cimanow.*#%#//scriptlet('trusted-create-element', 'body', 'div', 'id="abook" style="display: none;"', '0123456789')
-freex2line.online,cimanowtv.com,cnvids.com,cimanow.cc,cimanow.*$$script:contains(/\.__proto__\.constructor\.name|decompressFromUTF16|\)\.substr\(0|document\[_0x[\s\S]*?innerHTML|=Array\.prototype\.slice\.call\(arguments\)/)
+freex2line.online,cimanowtv.com,cnvids.com,cimanow.cc,cimanow.*#%#//scriptlet('remove-node-text', 'script', '/\.__proto__\.constructor\.name|decompressFromUTF16|\)\.substr\(0|document\[_0x[\s\S]*?innerHTML|=Array\.prototype\.slice\.call\(arguments\)|adBlockDetected/')
+freex2line.online,cimanowtv.com,cnvids.com,cimanow.cc,cimanow.*#%#//scriptlet('trusted-create-element', 'body', 'div', 'id="AdamWrMum" style="display: none;"', '0123456789')
+freex2line.online,cimanowtv.com,cnvids.com,cimanow.cc,cimanow.*$$script:contains(/\.__proto__\.constructor\.name|decompressFromUTF16|\)\.substr\(0|document\[_0x[\s\S]*?innerHTML|=Array\.prototype\.slice\.call\(arguments\)|adBlockDetected/)
 freexcafe.com###banner-tube-single
 freexcafe.com###join
 freexcafe.com###rightcolumn
@@ -60093,6 +60094,8 @@ m4ufree.com##a[href^="//look.ichlnk.com/"]
 m9.news###single-top-ad
 m9.news##.ads-wrap-qqq
 m9.news##.main-content > p:has(> ins.adsbygoogle)
+m9.news#$#.m9-ad-modal { display: none !important; }
+m9.news#$#body { overflow: auto !important; }
 ma-bank.net#@#.ad_top
 ma-x.org##.k2cd89-hide
 maalaimalar.com#%#//scriptlet("prevent-addEventListener", "load", "adblock")
@@ -87765,6 +87768,7 @@ zzzyk.com###Tinfo
 ||facebook.com/ajax/bnzai*__comet_req=
 ||facebook.com/ajax/mtouch_perf_page_load_timings/
 ||facebook.com/ajax/qm/
+||facebook.com/ajax/weblite_load_logging/
 ||facebook.com/audiencenetwork/$third-party
 ||facebook.com/audiencenetwork/web/?
 ||facebook.com/brandlift.php
@@ -92703,7 +92707,6 @@ zzzyk.com###Tinfo
 ||okooo.com/I/?method=system.data.ad&
 ||okx.com/jsstat/sb?
 ||ol-img.com/channel/tuku/js/tukuPopup.js
-||olacontent.schwab.com^$script
 ||olawa24.pl/media/campaigns/files/$image
 ||old.fx.co/get_banner/forum/$subdocument,domain=investsocial.com
 ||older-mature.net/pop.js
