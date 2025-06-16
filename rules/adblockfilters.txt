@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250616001250
-! Last modified: 2025/06/16 00:12:50
-! Blocked Filters: 98379
+! Version: 20250616085821
+! Last modified: 2025/06/16 08:58:21
+! Blocked Filters: 98381
 !
 ###AC_ad
 ###AD_160
@@ -22294,6 +22294,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /tracking?referrer
 /tracking?vs=
 /trackingApi?type=
+/trackingClient.bundle.js
 /trackingCode-
 /trackingCode.js
 /trackingDTM.js
@@ -39961,7 +39962,6 @@ bccn.net##div[style*="height:90"]
 bccn.net##img[src*="data:"]
 bccn.net,douyuex.com,hkepc.com,iviewui.com,juejin.cn##.advertisement
 bchtechnologies.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', '_0x')
-bclikeqt.com#%#//scriptlet("prevent-window-open")
 bcmagazine.net##img[style^="width:300px;"]
 bcquan.me##.bcqad
 bcvc.*#%#//scriptlet("abort-on-property-read", "pop_init")
@@ -43897,6 +43897,7 @@ constructionworld.in##.sticky-ads-desktop
 consumercomplaints.in##.in-ads
 consumerist.com#@#.after-post-ad
 consumerreports.org##.monetate_selectorHTML_48e69fae
+contactform7.com##.cf7com-bsa-zone
 contactform7.com,ducumon.click###custom_html-5
 content.techgig.com##.gutter-banner
 content.techgig.com##.main-content-polls
@@ -85049,7 +85050,6 @@ zzzyk.com###Tinfo
 ||buondua.com/hit/
 ||buondua.com/templatesygfo76jp36enw15_/
 ||burdaffi.burdamedia.pl/script/init.js
-||burpee.xyz^$third-party
 ||bursa33.xyz^$popup
 ||burstcloud.co/jwe?
 ||business.msstatic.com/advertiser/$image
@@ -86202,7 +86202,6 @@ zzzyk.com###Tinfo
 ||cr173.com/skinb/
 ||crackshash.com/dc.php?$popup
 ||crall.io/beacon/
-||crambidnonutilitybayadeer.com^$popup
 ||crank-in.net/assets/common/js/sendpv.js
 ||crazyclickstats.com^$third-party
 ||crazygolfdeals.com.au/widget$subdocument
@@ -86677,6 +86676,7 @@ zzzyk.com###Tinfo
 ||djerycom.ug/obulango/
 ||djicdn.com/uploads/ad_image_file/
 ||djljz.cn/Plugins/Template/XJLY/js/app.
+||djpunjab.*/ads/
 ||djuf7jb483wz1.cloudfront.net/p/l.jpg
 ||dl.4kdownload.com/app/advertisement/
 ||dl.dropboxusercontent.com/s/*/progress-bar-scroll-ads.js
@@ -91706,6 +91706,7 @@ zzzyk.com###Tinfo
 ||mql5.com/rq?
 ||mql5.com/st?
 ||mql5.com/tr?
+||mr-jatt.im/ads/
 ||mr.allegro.
 ||mrdhan.com/asset/*.min.js?*=*&
 ||mrf.io/statics/marfeel-sdk.js
@@ -96381,6 +96382,7 @@ zzzyk.com###Tinfo
 ||tw.partner.buy.yahoo.com^$domain=cool3c.com
 ||tw.rd.yahoo.com^$image
 ||twavtv.com/js/jquery.colorbox
+||tweakers.net/ajax/clicks/
 ||tweakers.nl/track/
 ||tweetycoin.com^$domain=1ink.cc
 ||twitchtracker.com/gb/*.gif
@@ -96895,7 +96897,7 @@ zzzyk.com###Tinfo
 ||vk923.com/img/
 ||vkprime.com/player*/vast.js
 ||vkspeed.com/player*/vast.js
-||vkvideo.ru/al_video.php?
+||vkvideo.ru/al_video.php?act=track
 ||vladan.fr/images/blank3.gif
 ||vladan.fr/wp-content/*/plugins/wpsite-background-takeover*/js/wpsite_clickable-*.js
 ||vladan.fr/wp-content/cache/min/1/wp-content/uploads/images/bmdqpcen-*.js
