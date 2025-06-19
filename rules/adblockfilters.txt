@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250619001502
-! Last modified: 2025/06/19 00:15:02
-! Blocked Filters: 97981
+! Version: 20250619085632
+! Last modified: 2025/06/19 08:56:32
+! Blocked Filters: 97985
 !
 ###AC_ad
 ###AD_160
@@ -34650,6 +34650,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||static*.mfcdn*.xyz^$image,stealth=referrer,domain=mangafire.to
 @@||static*.nytimes.com/newsgraphics/*/_assets/graphics/$xmlhttprequest,elemhide,jsinject,extension
 @@||static-*.xvideos.com/*/js/
+@@||static-cdn.hotjar.com^$script,domain=mercadopublico.cl
 @@||static-cdn.spot.im/production/*/*.js$domain=bizpacreview.com
 @@||static-cdn.spot.im/production/ads/tags/*/ads/ads.css
 @@||static-cdn.spot.im/production/ads/tags/*/ads/ads.js$domain=cgmagonline.com
@@ -34728,6 +34729,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||static.hdslb.com/ad-images/$image
 @@||static.hentai.direct/$stealth=referrer,image
 @@||static.hentai.direct^$stealth=referrer
+@@||static.hotjar.com/c/hotjar-$script,domain=mercadopublico.cl
 @@||static.hotjar.com/c/hotjar-*.js$xmlhttprequest,domain=app.neilpatel.com
 @@||static.jfrft.com/js/main_list.js^$domain=dilidili.wang
 @@||static.jfrft.com/js/main_video.js^$domain=dilidili.wang
@@ -52115,6 +52117,7 @@ gry.pl###overlay:has(>.adblock)
 gry.pl##body .advert.mpu
 gsmarena.com###subHeader2
 gsmarena.com###subHeader3
+gsmarena.com###subHeader3:has([href="deals.php3"])
 gsmarena.com###subHeader:has(> #topAdv)
 gsmarena.com###topAdv
 gsmarena.com##.module-arenaev
@@ -86342,6 +86345,7 @@ zzzyk.com###Tinfo
 ||drugs.com/img/pixel.gif
 ||drupal.org/VnPBBfwe/init.js
 ||drvsky.com/js/jolimark.gif
+||dscgirls.live/*/vast$third-party
 ||dshangyan.com/pc/advertising/
 ||dsp.lenovo.com.cn^*&clientType=api|
 ||dtksoft.com/ajax/log^
