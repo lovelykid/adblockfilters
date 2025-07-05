@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250705001404
-! Last modified: 2025/07/05 00:14:04
-! Blocked Filters: 97027
+! Version: 20250705085414
+! Last modified: 2025/07/05 08:54:14
+! Blocked Filters: 97028
 !
 ###AC_ad
 ###AD_160
@@ -18045,7 +18045,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /^https?:\/\/[0-9a-z]{8,}\.com\/.*/$~media,third-party,domain=strtape.cloud,badfilter
 /^https?:\/\/[0-9a-z]{8,}\.xyz\/.*/$third-party,xmlhttprequest,domain=1link.club|2embed.to|apiyoutube.cc|bestmp3converter.com|clicknupload.red|clicknupload.to|daddyhd.com|dood.wf|lulustream.com|mp4upload.com|poscitech.com|sportcast.life|streamhub.to|streamvid.net|tokybook.com|tvshows88.live|uqload.io
 /^https?:\/\/[0-9a-z]{8,}\.xyz\/.*/$~media,third-party,domain=sportcast.life,badfilter
-/^https?:\/\/[a-z-]{6,}\.(?:com?|pro|info|xyz)\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,xmlhttprequest,third-party,match-case
+/^https?:\/\/[a-z-]{6,}\.(?:com?|pro|info|xyz)\/[a-d]?[-\.\/_A-Za-z][DHOWXm][-\.\/_A-Za-z][579FVZ][-\.\/_A-Za-z][6fswyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,xmlhttprequest,third-party,match-case
 /^https?:\/\/[a-z0-9]+\.rumormillnews\.com\/images\/(make_my_day.JPG|banner3kevinremade.jpeg|banner3kevinremade.jpeg|africanfamily3.jpg|acm-homeworkshop.jpg)/$domain=rumormillnews.com
 /^https?:\/\/[a-z]{8,15}\.xyz\/$/$xmlhttprequest,third-party,method=head,to=xyz
 /^https?:\/\/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\/.*(\?|&)__cpo=aHR0c/$replace=/__Cpn.prototype.showAds = true;/__Cpn.prototype.showAds = false;/,document,domain=/^\d{1\,3}\.\d{1\,3}\.\d{1\,3}\.\d{1\,3}\$/
@@ -25030,6 +25030,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
 @@$websocket,domain=xvideos.com
 @@&ad_type=$domain=ultimate-guitar.com
+@@&http_referer=$domain=chaopx.com
 @@*$generichide,domain=faqwiki.*
 @@*$image,domain=hardwareluxx.de,~third-party
 @@*$script,third-party,domain=embedme.*|filemoon.*|finfang.*|hellnaw.*|moonembed.*|z12z0vla.*|fmoonembed.*
@@ -35128,6 +35129,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||two.re^$generichide
 @@||txc.gtimg.com/static/$stealth,domain=support.qq.com
 @@||txori.com^$generichide
+@@||txws.yyzb456.top^$domain=857zb7.tv
 @@||txxx.ahcdn.com/key=$stealth=referrer
 @@||txxx.com/embed/$stealth=referrer
 @@||txxx.com/ext/get_file^$stealth=referrer
@@ -47389,12 +47391,13 @@ f95zone.to##.block--category > div.block-container div.node:has(a[href^="/explor
 f95zone.to##.node:has(> .node-body > .node-main > .node-title > a[href^="/link-forums/"][href*="-slut."])
 f95zone.to##.offCanvasMenu-linkHolder > .offCanvasMenu-link[target="_blank"]
 f95zone.to##.p-nav-list .p-navEl-link[target="_blank"]
-f95zone.to##.p-nav-list > li:has(> div > a[href^="https://f95zone.to/link-forums/"])
-f95zone.to##.p-nav-list > li:has(> div > a[href^="https://f95zone.to/link-forums/"]) ~ li
 f95zone.to##.samAlignCenter
 f95zone.to##a[data-nav-id="AIPorn"]
 f95zone.to##a[data-nav-id="AISexChat"]
+f95zone.to##a[href="https://lewdpatcher.com/"]
 f95zone.to##a[href^="https://www.deepswap.ai"]
+f95zone.to##ul > li:has(> div > a[href^="https://f95zone.to/link-forums/"])
+f95zone.to##ul > li:has(> div > a[href^="https://f95zone.to/link-forums/"]) ~ li
 f95zone.to,imagetwist.com##a[href^="https://candy.ai/"]
 f95zone.to,pornhub.com,pornhubpremium.com,redtube.com##a[href^="https://ads.trafficjunky.net/"]
 faapy.com##.footer > .container > .textlink
@@ -70994,7 +70997,6 @@ speedtest.net##.dfp-ab-leaderboard
 speedtest.net##.eot-box-wrapper > div.pure-g
 speedtest.net##.pure-u-custom-ad-rectangle
 speedtest.net##.pure-u-custom-wifi-recommendation
-speedtest.net##.speedtest-container[style^="min-height:"] {min-height:unset !important;}
 speedtest.net##.top-placeholder
 speedtest.net##div[class^="dfp-eot-"]
 speedtest.net#@#.pure-u-custom-ad-skyscraper
@@ -73078,7 +73080,6 @@ the-express.com##.fr-container
 the-express.com##.viafoura-standalone-mpu
 the-express.com##[data-tb-non-consent]
 the-express.com##body [id^="div-gpt-ad"]:not(#style_important)
-the-independent.com###billboard-wrapper
 the-independent.com###taboola-mid-article-thumbnails-ii
 the-scientist.com###Torpedo
 the-scientist.com###preHeader
