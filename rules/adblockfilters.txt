@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250709161636
-! Last modified: 2025/07/09 16:16:36
-! Blocked Filters: 96928
+! Version: 20250710001256
+! Last modified: 2025/07/10 00:12:56
+! Blocked Filters: 96933
 !
 ###AC_ad
 ###AD_160
@@ -45343,13 +45343,9 @@ dongao.com##div[class^="fu_"]
 dongao.com,zgsyz.com###ad
 dongknows.com##.dkt-abanner-top
 dongknows.com##.dkt-amz-deals
+dongknows.com##.dkt-amz-top
 dongknows.com##.dkt-banner-ads
 dongknows.com##.inside-right-sidebar > aside#custom_html-46
-dongknows.com#%#//scriptlet('remove-node-text', 'script', 'js_var_nothing')
-dongknows.com#@#.oasads
-dongknows.com#@#.topadbox
-dongknows.com#@#.widget-sponsor
-dongknows.com$$script:contains(js_var_nothing)
 dongludi.top##.container > div[class="m-2"]
 dongmanhuayuan.myheartsite.com##.card-body
 doniaweb.com##article[id^="elComment_"] + div[class^="ips"]
@@ -50174,6 +50170,8 @@ gazetaprawna.pl##.contentStreamFactory
 gazetaprawna.pl##.infor-ad
 gazetaprawna.pl##.tpl_std_module > div[id^="belka"][style^="margin-top:"] > div[style="text-align: center; color: grey; font-size: 10px;"]
 gazetaprawna.pl$$script[src="html-load.com/loader.min.js"]
+gazetki.pl##.ad_d_small
+gazetki.pl##aside > div[style*="height:"]:has(> .ad_d_small)
 gazette.com##.csGWrap > div.csMon:has(> div[style] > ins.adsbygoogle)
 gazette.com##.tnt-section-sponsored
 gazette.com##div[id^="tncms-block-"]:has(> section > div.card-container div.tnt-section-sponsored)
@@ -50961,6 +50959,9 @@ gogoanime2.org#?#.content_right > .headnav_center > .adsverting:upward(1)
 gogoanimes.fi##.ads_watch_top
 gogodl.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "bannerad")
 gogodl.com#?#.mb-5.align-items-end > .col-lg-6:has(> .adsbygoogle)
+gogonu.com##.special-image
+gogonu.com##.video-item > .iframe-item
+gogonu.com,starwank.com,fapnado.xxx,analdin.com##iframe[src*="/api/spots/"]
 gohome.com.hk##div[id^="div-gpt-ad"][style]
 gohome.com.hk,idv.st#@##adFrame
 gold-24.net#%#//scriptlet("set-constant", "getalladblocks", "noopFunc")
@@ -62930,8 +62931,11 @@ nontonhentai.top##.extend
 nontonhentai.top##.kln
 nontonhentai.top##div[id^="teaser"]
 nontonx.com###rules-nontonx
+nontonx.com##body > div[style]:has(> div[style] > button[onclick="location.reload()"])
+nontonx.com#%#//scriptlet('trusted-replace-node-text', 'script', 'toString', '/!results\.bait \|\| !results\.rum \|\| !results\.recaptcha/!1/g', '!1')
 nontonx.com#%#//scriptlet('trusted-replace-node-text', 'script', 'toString', '/if \(!.+\(\)\) return;/g', '')
 nontonx.com#%#//scriptlet('trusted-replace-node-text', 'script', 'toString', '/if \(.\.. === null\) return;/g', '')
+nontonx.com#%#//scriptlet('trusted-replace-node-text', 'script', 'toString', '/if \([a-zA-Z\d]+\(\)\) \{/g', 'if(!0){')
 noodlemagazine.com##.menu > a[href^="https://theporndude.com/"]
 noodlemagazine.com##div[style="width:900px;height:250px;margin:20px auto 0"]
 noodlemagazine.com#$?#.video_player + style { remove: true; }
@@ -71503,7 +71507,6 @@ startupcafe.ro##.main-partners
 startups.co.uk##.headline-sponsor
 starwank.com##.content > .top > center
 starwank.com#?#center:contains(Advertisement)
-starwank.com,fapnado.xxx,analdin.com##iframe[src*="/api/spots/"]
 starwank.com,faptor.com##.zpot-horizontal-img
 starwank.com,pimpandhost.com,my18pussy.com,18pussy.porn,thisvid.com,pornhills.com,gifhq.com,nudeclap.com,hentaila.com,fapality.com,720video.me,javbuz.com,youwatchporn.com,watchpornx.com,xxxparodyhd.net,pornhat.com,hot-sex-tube.com,teen-tube-20.com,javteentube.com,asian-teen-sex.com,gottanut.com,pornkino.cc,watchpornfree.info,xxxmoviestream.xyz,mangoporn.co,ecoimages.xyz,tmohentai.com,tbib.org,dailyimages.xyz,159i.com,xopenload.me,tubsexer.com,blameless.work,streamporn.pw,stileproject.com,watchpornfree.ws,noodlemagazine.com,pandamovies.pw,sensualgirls.org#%#//scriptlet("abort-current-inline-script", "document.dispatchEvent", "/getexoloader/")
 starwarsaddicted.it#$#.ad_unit.ad-unit.text-ad.text_ad.pub_300x250 { display: block!important; }
@@ -89257,7 +89260,6 @@ zzzyk.com###Tinfo
 ||lffl.org/wp-content/uploads/*/mrdeals-banner.jpg
 ||lffl.org/wp-content/uploads/*/techbannerino320x100.jpg
 ||lffl.org/wp-content/uploads/*/techrepair.jpg
-||lftce.clearstem.com/load
 ||lgmi.com/ggimg/
 ||lgmi.com/left_right_
 ||lgmi.com/right_ys
@@ -90794,8 +90796,10 @@ zzzyk.com###Tinfo
 ||nomadsbrand.com^$popup
 ||nomadsfit.com^$popup
 ||nongjitong.com/adm/
+||nontonx.com^$replace=/!results\.bait \|\| !results\.rum \|\| !results\.recaptcha/!1/,document
 ||nontonx.com^$replace=/if \(!.+\(\)\) return;//,document
 ||nontonx.com^$replace=/if \(.\.. === null\) return;//,document
+||nontonx.com^$replace=/if \([a-zA-Z\d]+\(\)\) \{/if(!0){/,document
 ||noodlemagazine.com/api/stats?
 ||nookthem.com/js/popping^
 ||nooo.tv/theme/basic/img/banner
@@ -94883,6 +94887,7 @@ zzzyk.com###Tinfo
 ||tubitv.com/oz/performance/
 ||tubous.com/bloader.php
 ||tubxporn.com/js/xp.js
+||tui.gtimg.com//res/
 ||tui555.com/public/gong/js/a_
 ||tui56.com/guanggao*.html
 ||tuinfra.com^$third-party
