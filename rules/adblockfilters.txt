@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250902001339
-! Last modified: 2025/09/02 00:13:39
-! Blocked Filters: 97567
+! Version: 20250902085301
+! Last modified: 2025/09/02 08:53:01
+! Blocked Filters: 97579
 !
 ###AC_ad
 ###AD_160
@@ -17447,8 +17447,11 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /FduttjAlivqpo/*
 /Fingerprintjs2/fpt2.js
 /GTag/general_tracker.js
+/GetPlaybackResources?$all,removeparam=deviceAdInsertionTypeOverride,domain=amazon.com|amazon.co.jp|amazon.de|amazon.co.uk|primevideo.com
 /GetPlaybackResources?$jsonprune=\$.cuepointPlaylist,all,domain=amazon.com|amazon.co.jp|amazon.de|amazon.co.uk|primevideo.com
 /GetPlaybackResources?$jsonprune=\$.vodPlaybackUrls.result.playbackUrls.cuepoints,all,domain=amazon.com|amazon.co.jp|amazon.de|amazon.co.uk|primevideo.com
+/GetPlaybackResources?$xmlhttprequest,removeparam=deviceAdInsertionTypeOverride,domain=amazon.com|amazon.co.jp|amazon.de|amazon.co.uk|primevideo.com
+/GetPlaybackResources?*%2CCuepointPlaylist$all,urltransform=/%2CCuepointPlaylist//,domain=amazon.com|amazon.co.jp|amazon.de|amazon.co.uk|primevideo.com
 /GetVodPlaybackResources?$jsonprune=\$.cuepointPlaylist,xmlhttprequest,domain=amazon.com|amazon.co.jp|amazon.de|amazon.co.uk|primevideo.com
 /GetVodPlaybackResources?$jsonprune=\$.vodPlaybackUrls.result.playbackUrls.cuepoints,xmlhttprequest,domain=amazon.com|amazon.co.jp|amazon.de|amazon.co.uk|primevideo.com
 /GlanceCobrowseLoader_
@@ -21239,6 +21242,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /render-ad.php?ad_id=
 /render-sidebar-ad.php?ad_id=
 /renderTimingPixel.
+/replay?ddsource=
 /reportData/nm.gif?
 /report_ga_events/*
 /report_visit.php
@@ -24641,7 +24645,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://m.*.pw/*.js?ssid=_
 ://m.*.pw/*/*.js?$third-party
 ://m.*.top/*.js?ssid=_
-://matomo.$domain=~matomo.org
+://matomo.$domain=~matomo.dhjensen.dk|~matomo.org
 ://metrics-collector.
 ://mine.torrent.pw^
 ://mint.*/?js
@@ -32855,6 +32859,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||ps.w.org/wp-slimstat/$domain=wordpress.org
 @@||ps.w.org^$image,domain=wordpress.org
 @@||pstatic.net^$image,stealth=referrer
+@@||psynet.co.kr^$stealth=dpi
 @@||ptah.m3pd.com/key=$media,domain=porntop.com,stealth=referrer
 @@||pttcell.com.tr^$stealth=dpi
 @@||pttplay.com/js/momo/adsbygoogle.js
@@ -58073,6 +58078,7 @@ linkedin.com##.scaffold-finite-scroll__content > div > div[data-id^="urn:li:acti
 linkedin.com##article[data-is-sponsored]
 linkedin.com##iframe[componentkey="MynetworkDesktopNav_mynetwork_desktop_nav_ad"]
 linkedin.com##iframe[title="Advertisement"]
+linkedin.com##iframe[title="advertisement"]
 linkedin.com##li[data-is-sponsored="true"]
 linkedin.com#$#.ad-banner-container.is-header-zone { padding: 0 0 !important; }
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__description span:-abp-contains(/促銷內容|广告/))
@@ -66704,7 +66710,10 @@ primemovies.pl##div[data-insertion-position]
 primeradivision.pl,fcbarca.com##.banner
 primetechieforum.com#%#//scriptlet('prevent-element-src-loading', 'img', 'doubleclick.net')
 primevideo.com#%#//scriptlet('json-prune', 'cuepointPlaylist vodPlaybackUrls.result.playbackUrls.cuepoints')
-primevideo.com,amazon.co.uk,amazon.de,amazon.co.jp,amazon.com#%#//scriptlet('xml-prune', 'xpath(//*[name()="Period"][.//*[@value="Ad"]] | //*[name()="Period"]/@start)', '[value="Ad"]', '.mpd')
+primevideo.com,amazon.co.uk,amazon.de,amazon.co.jp,amazon.com#%#((e,t)=>{const p={apply:(p,o,n)=>{if(n[0]&&n[1]&&n[1].includes(t)){const t=new URL(n[1]);t.searchParams.delete(e),n[1]=t.href.replace("%2CCuepointPlaylist","")}return Reflect.apply(p,o,n)}};window.XMLHttpRequest.prototype.open=new Proxy(window.XMLHttpRequest.prototype.open,p)})("deviceAdInsertionTypeOverride","/GetPlaybackResources?");
+primevideo.com,amazon.co.uk,amazon.de,amazon.co.jp,amazon.com#%#//scriptlet('xml-prune', 'xpath(//*[name()="Period"][.//*[@value="Ad"]] | /*[name()="MPD"]/@mediaPresentationDuration | //*[name()="Period"]/@start)', '[value="Ad"]', '.mpd')
+primevideo.com,amazon.co.uk,amazon.de,amazon.co.jp,amazon.com#%#//scriptlet('xml-prune', 'xpath(//*[name()="Period"][.//*[@value="Draper"]] | /*[name()="MPD"]/@mediaPresentationDuration | //*[name()="Period"]/@start)', '[value="Draper"]', '.mpd')
+primevideo.com,amazon.co.uk,amazon.de,amazon.co.jp,amazon.com#%#//scriptlet('xml-prune', 'xpath(//*[name()="Period"][.//*[name()="BaseURL" and contains(text(),"/interstitial/")]] | /*[name()="MPD"][.//*[name()="BaseURL" and contains(text(),"/interstitial/")]]/@mediaPresentationDuration | /*[name()="MPD"][.//*[name()="BaseURL" and contains(text(),"/interstitial/")]]/*[name()="Period"]/@start)', '', '.mpd')
 primewire.li##a[href^="/links/sponsored/"]
 primewire.li#?#.choose_tabs > .actual_tab > .movie_version:has(> tbody > tr > td > span > a[href^="/links/sponsored/"])
 primewire.link##a[href^="https://url.rw/"]
@@ -76516,11 +76525,8 @@ updato.com#$#div[class^="firmware-"][class*="-add"] { height:1px!important; }
 updato.com#%#(function(){var b=window.setTimeout;window.setTimeout=function(a,c){if(!/\!document\.getElementById[\s\S]*?#updato-overlay/.test(a.toString()))return b(a,c)};})();
 updoc.site,pornoplay.online##div[class^="happy-"]
 updown.fun#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
-upfion.com,upfiles.app,upfiles-urls.com,falpus.com,fooak.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 upfion.com,upfiles.app,upfiles-urls.com,falpus.com,fooak.com#%#//scriptlet('prevent-window-open')
 upfion.com,upfiles.app,upfiles-urls.com,falpus.com,fooak.com#%#//scriptlet('set-constant', 'shouldOpenPopUp', 'false')
-upfion.com,upfiles.app,upfiles-urls.com,falpus.com,fooak.com#@#.ad-element
-upfion.com,upfiles.app,upfiles-urls.com,falpus.com,fooak.com#@#.ad-inner
 upfivedown.com###block-4
 upfivedown.com###block-8
 upfivedown.com##.entry > hr.wp-block-separator + .has-text-align-center
@@ -76605,6 +76611,9 @@ upornia.com,upornia.tube##.wssvkvkyyee
 upornia.tube##.voiscscttnn
 uppit.com###catfish
 uppit.com#%#//scriptlet("adjust-setTimeout", "#countdown", "", "0.02")
+upplinks.net,upfion.com,upfiles.app,upfiles-urls.com,falpus.com,fooak.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
+upplinks.net,upfion.com,upfiles.app,upfiles-urls.com,falpus.com,fooak.com#@#.ad-element
+upplinks.net,upfion.com,upfiles.app,upfiles-urls.com,falpus.com,fooak.com#@#.ad-inner
 uprot.net#$##butok { display: block !important; }
 uprot.net#@#.ad_space
 uprotector.xyz#%#//scriptlet("prevent-window-open")
@@ -85531,6 +85540,7 @@ zzzyk.com###Tinfo
 ||cvt-*.*.tech/*/_*.xml?cp.host=$domain=rapidvid.net|vidrame.pro
 ||cww.net.cn/include/show.asp?boardID=
 ||cww.net.cn/js/urdev.js
+||cxgpt1.goindigo.in/forward/v2/track
 ||cxm-api.fifa.com/fifaplusweb/api/video/GetVerizonPreplayParameters?*&adPostroll$replace=/"adPostroll":true/"adPostroll":false/
 ||cxm-api.fifa.com/fifaplusweb/api/video/GetVerizonPreplayParameters?*&adPostroll$xmlhttprequest,removeparam=adPostroll
 ||cxm-api.fifa.com/fifaplusweb/api/video/GetVerizonPreplayParameters?*&prerollAds$replace=/"adPreroll":true/"adPreroll":false/
@@ -95513,11 +95523,13 @@ zzzyk.com###Tinfo
 ||turbobit.net/*/72890.png
 ||turbobit.net/*/img/promo/320x100.gif
 ||turbobit.net/*_brendir_*.jpg
+||turbobit.net/fd1/js/brinpopup.js
 ||turbobit.net/files/news/*.swf
 ||turbobit.net/files/news/cwer_pop.js
 ||turbobit.net/files/news/image/big.png
 ||turbobit.net/files/news/image/free_download
 ||turbobit.net/files/news/lords_turbobit$domain=turbobit.net
+||turbobit.net/js/analytics/
 ||turbobit.net/oexktl/
 ||turbobit.net/partner^$third-party
 ||turbobit.net/pus/
