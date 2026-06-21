@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、SmartTV Blocklist、1024 hosts、ad-wars hosts、StevenBlack hosts。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20260621104259
-! Last modified: 2026/06/21 10:42:59
-! Blocked Filters: 43480
+! Version: 20260621190002
+! Last modified: 2026/06/21 19:00:02
+! Blocked Filters: 43477
 !
 ###AC_ad
 ###AD_160
@@ -24570,6 +24570,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||192.168.$~third-party
 @@||192.168.*.1/$generichide
 @@||192.168.*/advertising_$stylesheet
+@@||2345.com/images/activity/20171111/open/j/close.png
 @@||360buyimg.com/ad/$domain=jd.com
 @@||360buyimg.com/ads/$domain=jd.com
 @@||360buyimg.com^*??
@@ -27024,6 +27025,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||thepiratebay.*/ajax_
 @@||theverge.com^$content
 @@||thirai*.com/*/$subdocument,stealth=referrer,domain=tamildhool.net
+@@||thirdparty.aliexpress.com^$stealth=flash
 @@||threatbook.cn/public/asset/js/zhugeIo.
 @@||thumbnail*.coupangcdn.com/thumbnails/$stealth=referrer,image
 @@||tianyancha.com^*/sensorsdata.$script,~third-party
@@ -28784,7 +28786,6 @@ bing.com,~www.bing.com#?#.b_algo p:-abp-properties(display: inline-block;)
 bingdou.com.cn,hoteastday.com##.float_ad
 binnews.com,iheart.com,jessekellyshow.com,steveharveyfm.com##.component-pushdown
 binnews.com,iheart.com,jessekellyshow.com,steveharveyfm.com##.component-recommendation
-bioinformant.com,geeksforgeeks.org###text-15
 bioinformant.com,geeksforgeeks.org,theretirementmanifesto.com###text-15
 biolink.webtena.com,lite.liiingo.com#%#//scriptlet('prevent-setTimeout', 'ad_blocker_detector_modal')
 biologists.com,corsaires-paris.com#@#.adhesion:not(body)
@@ -31541,7 +31542,6 @@ gizmodo.com,kotaku.com##.lg\:min-h-\[300px\]
 gizmodo.com,kotaku.com##.od-wrapper
 gizmodo.com,kotaku.com##.widget_keleops-ad
 gizmodo.com,lgbtqnation.com,space.com##.aspect-video
-gizmodo.com,space.com##.aspect-video
 gizmodo.com.au,kotaku.com.au,lifehacker.com.au,pedestrian.tv##.ad-no-mobile
 gizmodo.com.au,kotaku.com.au,lifehacker.com.au,pedestrian.tv##.sidebar-outbrain
 gizmodo.com.au,kotaku.com.au,lifehacker.com.au,pedestrian.tv##.top-ad-leaderboard
@@ -31582,7 +31582,6 @@ gold-24.net,bedavahesap.org##.back-top + div[id][class*=" "]
 golderotica.com,nudeplayboygirls.com##body > div#topbar
 golflink.com,yourdictionary.com##.ui-advertisement
 golfmagic.com,kbb.com,thisismoney.co.uk##.sticky-container
-golinksworld.com###btn_download
 gomoviestv.to,9anime.*,swiftload.io,decmelfot.xyz,usgate.xyz#$?#div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"] { remove: true; }
 gomoviestv.to,9anime.*,swiftload.io,decmelfot.xyz,usgate.xyz#$?#iframe[src="about:blank"] { remove: true; }
 gongkong.com###dull_left
@@ -34627,6 +34626,7 @@ mygoodstream.pw,pornyhd.com,pornxday.com,freeservice.info,eurostreaming.pink,img
 myhentaigallery.com,hdzog.com,voyeurhit.com##.footer-banners
 myhouseabroad.com,njuskalo.hr,starbuy.sk.data10.websupport.sk#@#.ad_item
 myicloud.info,boyfuck.me,casopismetropola.sk,javboys.tv,lacrima.jp,the-mystery.org,airportwebcams.net,animalwebcams.net,naruldonghua.com,chikianimation.com,u-idol.com,varnascan.*,summertoon.*,donghuaworld.com###footer + div[id][class*=" "]
+myk3.com##a[href*="?aid="]
 mykhel.com,oneindia.com###verticleLinks
 mylink.*,my1ink.*,myl1nk.*,myli3k.*#%#//scriptlet('prevent-setInterval', '/0x|dBodySize/')
 mylink.*,my1ink.*,myl1nk.*,myli3k.*$$script:contains(ecodedBodySize)
@@ -37389,6 +37389,8 @@ themarysue.com,scarymommy.com##div[class^="htlad-"]
 thematureporn.net,oncams.tv,camporn.is,xxxn.club,camseek.tv,pornflix.to,theporngod.com,eurogirlsescort.com,xxxdl.net,manofmany.com,hotstunners.com,punishbang.com,hdtube.porn,pornburst.xxx,worldofmods.com,wantedbabes.com,wonderopolis.org,thehackernews.com,xxxadultphoto.com,teenfuckhd.com,mumbrella.com.au##.banners
 themirror.com,myyearbook.com###takeover
 themodellingnews.com,programmingoneonone.com###Image1
+thepaper.cn###head_ask_app_down
+thepaper.cn##[class^='index_footer_banner']
 thepcenthusiast.com,4thsight.xyz,gossipfunda.com,stockingfetishvideo.com###custom_html-16
 thephoblographer.com,noqreport.com##div[id^="vuukle-ad-"]
 thepiratesproxy.org,pirateproxy.space,tpbproxypirate.com,pirateproxy-bay.com###float
@@ -37448,6 +37450,7 @@ theweather.com,theweather.net,yourweather.co.uk##.megabanner
 theweather.com,theweather.net,yourweather.co.uk##.meteored-ads
 thewindowsclub.com,lesbian8.com,bigtitslust.com,sexe-libre.org##a[rel$="sponsored"]
 thinbug.com###inktokad
+thinkphp.cn##.a6
 thisav2.com,njavtv.com#%#//scriptlet('set-session-storage-item', '_x_popped', 'emptyObj')
 thisismoney.co.uk,rockpapershotgun.com,metabomb.net##.billboard-container
 thisvid.com,pornhd8k.net##a[href^="https://theporndude.com"][target="_blank"]
@@ -38645,7 +38648,6 @@ www.kafan.cn##.comeing_show_box[style="padding:10px;"]
 www.o2.pl,rozrywka.o2.pl##.w-full[class*="bg-"] > div[class*="w-"][class*="px"] > div[class][style="width:100%"]
 www.qq.com##.adLeft,.adRight
 www.qq.com##div[class^="adRight"]
-www.rkanr.com##div[id^="rkrCp"]
 www.sina.com.cn###SI_EDU_AD
 www.sina.com.cn##.mod-01
 www.sina.com.cn##.part-l
@@ -38811,7 +38813,6 @@ xvideos.com,xvideos.es##.player-video.xv-cams-block
 xvideos.es,xvideos.com,xnxx.*,xv-ru.com,xnxx-ru.com##.e-banner-game
 xvideos.es,xvideos.com,xv-ru.com##.top-top
 xw.qq.com##.globalThemeTip
-xxt.cn#@##mainAd
 xxvidsx.com,tubsxxx.com##.videoAd
 xxx18.uno,xxxxvideo.uno##.place-wink
 xxxadd.com/eureka
@@ -39491,7 +39492,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||5etv.com^$third-party
 ||5ilog.com/qq/js/jsgg.js
 ||5imx.com/image/image/
-||5s98.com/img/
 ||6.cn/coop/pub/getRand.php?
 ||600km.com/template/*/ad/
 ||62422.cn/ggimg/
@@ -40582,7 +40582,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||da.duowan.com/loc/
 ||dabaoku.com^$object,script,subdocument
 ||dabin69.com/data/attachment/portal/
-||daf-rs.com/imageViewer/wpAd
 ||dahe.cn/indiboy/ads/
 ||dailynews.sina.com/gb/ads/
 ||daiyanbao.com/flash/md
@@ -41045,12 +41044,10 @@ zzztube.com,videoporn.tube##.b-random-column
 ||gtimg.cn/music/photo_new/T053XD001001BZyX50UcRRk.
 ||gtlpa*.com^
 ||gtmdev.jabra.
-||gtpso.com/Home/TopSdk/getFavCoupItems
 ||guahao.cn/blank.gif?
 ||gucheng.com/2016/ggimg/
 ||gucheng.com/gcwad/
 ||guhai.com.cn/AD/
-||guifun.com/psptool/ad/
 ||gumgo.cn^$third-party
 ||gunmi.cn^$third-party
 ||guokr.com/apis/flowingboard/item/guokrapp_
@@ -42374,7 +42371,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||read.amazon.*/uploadMetrics/
 ||real*traf.ru^
 ||realstreamunited.tv/*/pu.js^
-||redirector.googlevideo.com/*&source=dclk_video_ads&$redirect=nooptext,domain=sbs.com.au,important
 ||redirector.gvt1.com/videoplayback/id/*/source/gfp_video_ads/$media,redirect=noopmp4-1s,domain=poki-gdn.com|repuls.io,important
 ||redmx.cn^$third-party
 ||redshu.com/js/pcAdv.js
@@ -42843,6 +42839,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||thegay.com^$csp=default-src 'self' *.ahcdn.com fonts.gstatic.com fonts.googleapis.com https://thegay.com https://tn.thegay.com 'unsafe-inline' 'unsafe-eval' data: blob:,badfilter
 ||thegreatesthits.
 ||themezon.net^$replace=/window\.open\(/\/\/window.open(/,document
+||thepaper.cn/bottomBanner_
 ||thepiratebay.$script,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org,badfilter
 ||thepiratebay.*/*pop*.js
 ||thepiratebay.uproxy.*/helper-js
